@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52E9138B204E774600A09EAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E9138A204E774600A09EAC /* AppDelegate.swift */; };
+		52E9138D204E774600A09EAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E9138C204E774600A09EAC /* ViewController.swift */; };
+		52E91390204E774600A09EAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E9138E204E774600A09EAC /* Main.storyboard */; };
+		52E91392204E774600A09EAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52E91391204E774600A09EAC /* Assets.xcassets */; };
+		52E91395204E774600A09EAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E91393204E774600A09EAC /* LaunchScreen.storyboard */; };
+		52E913A0204E774600A09EAC /* SavecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E9139F204E774600A09EAC /* SavecTests.swift */; };
+		52E913AB204E774600A09EAC /* SavecUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E913AA204E774600A09EAC /* SavecUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52E9139C204E774600A09EAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52E9137F204E774600A09EAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52E91386204E774600A09EAC;
+			remoteInfo = Savec;
+		};
+		52E913A7204E774600A09EAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52E9137F204E774600A09EAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52E91386204E774600A09EAC;
+			remoteInfo = Savec;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52E91387204E774600A09EAC /* Savec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Savec.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52E9138A204E774600A09EAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52E9138C204E774600A09EAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52E9138F204E774600A09EAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52E91391204E774600A09EAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52E91394204E774600A09EAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52E91396204E774600A09EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E9139B204E774600A09EAC /* SavecTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SavecTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52E9139F204E774600A09EAC /* SavecTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavecTests.swift; sourceTree = "<group>"; };
+		52E913A1204E774600A09EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E913A6204E774600A09EAC /* SavecUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SavecUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52E913AA204E774600A09EAC /* SavecUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavecUITests.swift; sourceTree = "<group>"; };
+		52E913AC204E774600A09EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52E91384204E774600A09EAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E91398204E774600A09EAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E913A3204E774600A09EAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52E9137E204E774600A09EAC = {
+			isa = PBXGroup;
+			children = (
+				52E91389204E774600A09EAC /* Savec */,
+				52E9139E204E774600A09EAC /* SavecTests */,
+				52E913A9204E774600A09EAC /* SavecUITests */,
+				52E91388204E774600A09EAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52E91388204E774600A09EAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52E91387204E774600A09EAC /* Savec.app */,
+				52E9139B204E774600A09EAC /* SavecTests.xctest */,
+				52E913A6204E774600A09EAC /* SavecUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52E91389204E774600A09EAC /* Savec */ = {
+			isa = PBXGroup;
+			children = (
+				52E9138A204E774600A09EAC /* AppDelegate.swift */,
+				52E9138C204E774600A09EAC /* ViewController.swift */,
+				52E9138E204E774600A09EAC /* Main.storyboard */,
+				52E91391204E774600A09EAC /* Assets.xcassets */,
+				52E91393204E774600A09EAC /* LaunchScreen.storyboard */,
+				52E91396204E774600A09EAC /* Info.plist */,
+			);
+			path = Savec;
+			sourceTree = "<group>";
+		};
+		52E9139E204E774600A09EAC /* SavecTests */ = {
+			isa = PBXGroup;
+			children = (
+				52E9139F204E774600A09EAC /* SavecTests.swift */,
+				52E913A1204E774600A09EAC /* Info.plist */,
+			);
+			path = SavecTests;
+			sourceTree = "<group>";
+		};
+		52E913A9204E774600A09EAC /* SavecUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52E913AA204E774600A09EAC /* SavecUITests.swift */,
+				52E913AC204E774600A09EAC /* Info.plist */,
+			);
+			path = SavecUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52E91386204E774600A09EAC /* Savec */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52E913AF204E774600A09EAC /* Build configuration list for PBXNativeTarget "Savec" */;
+			buildPhases = (
+				52E91383204E774600A09EAC /* Sources */,
+				52E91384204E774600A09EAC /* Frameworks */,
+				52E91385204E774600A09EAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Savec;
+			productName = Savec;
+			productReference = 52E91387204E774600A09EAC /* Savec.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52E9139A204E774600A09EAC /* SavecTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52E913B2204E774600A09EAC /* Build configuration list for PBXNativeTarget "SavecTests" */;
+			buildPhases = (
+				52E91397204E774600A09EAC /* Sources */,
+				52E91398204E774600A09EAC /* Frameworks */,
+				52E91399204E774600A09EAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52E9139D204E774600A09EAC /* PBXTargetDependency */,
+			);
+			name = SavecTests;
+			productName = SavecTests;
+			productReference = 52E9139B204E774600A09EAC /* SavecTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52E913A5204E774600A09EAC /* SavecUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52E913B5204E774600A09EAC /* Build configuration list for PBXNativeTarget "SavecUITests" */;
+			buildPhases = (
+				52E913A2204E774600A09EAC /* Sources */,
+				52E913A3204E774600A09EAC /* Frameworks */,
+				52E913A4204E774600A09EAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52E913A8204E774600A09EAC /* PBXTargetDependency */,
+			);
+			name = SavecUITests;
+			productName = SavecUITests;
+			productReference = 52E913A6204E774600A09EAC /* SavecUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52E9137F204E774600A09EAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = NUS;
+				TargetAttributes = {
+					52E91386204E774600A09EAC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					52E9139A204E774600A09EAC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 52E91386204E774600A09EAC;
+					};
+					52E913A5204E774600A09EAC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 52E91386204E774600A09EAC;
+					};
+				};
+			};
+			buildConfigurationList = 52E91382204E774600A09EAC /* Build configuration list for PBXProject "Savec" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52E9137E204E774600A09EAC;
+			productRefGroup = 52E91388204E774600A09EAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52E91386204E774600A09EAC /* Savec */,
+				52E9139A204E774600A09EAC /* SavecTests */,
+				52E913A5204E774600A09EAC /* SavecUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52E91385204E774600A09EAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E91395204E774600A09EAC /* LaunchScreen.storyboard in Resources */,
+				52E91392204E774600A09EAC /* Assets.xcassets in Resources */,
+				52E91390204E774600A09EAC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E91399204E774600A09EAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E913A4204E774600A09EAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52E91383204E774600A09EAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E9138D204E774600A09EAC /* ViewController.swift in Sources */,
+				52E9138B204E774600A09EAC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E91397204E774600A09EAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E913A0204E774600A09EAC /* SavecTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E913A2204E774600A09EAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E913AB204E774600A09EAC /* SavecUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52E9139D204E774600A09EAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52E91386204E774600A09EAC /* Savec */;
+			targetProxy = 52E9139C204E774600A09EAC /* PBXContainerItemProxy */;
+		};
+		52E913A8204E774600A09EAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52E91386204E774600A09EAC /* Savec */;
+			targetProxy = 52E913A7204E774600A09EAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52E9138E204E774600A09EAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52E9138F204E774600A09EAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52E91393204E774600A09EAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52E91394204E774600A09EAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52E913AD204E774600A09EAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52E913AE204E774600A09EAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52E913B0204E774600A09EAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Savec/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NUS.Savec;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52E913B1204E774600A09EAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Savec/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NUS.Savec;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52E913B3204E774600A09EAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SavecTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NUS.SavecTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Savec.app/Savec";
+			};
+			name = Debug;
+		};
+		52E913B4204E774600A09EAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SavecTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NUS.SavecTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Savec.app/Savec";
+			};
+			name = Release;
+		};
+		52E913B6204E774600A09EAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SavecUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NUS.SavecUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Savec;
+			};
+			name = Debug;
+		};
+		52E913B7204E774600A09EAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SavecUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NUS.SavecUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Savec;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52E91382204E774600A09EAC /* Build configuration list for PBXProject "Savec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E913AD204E774600A09EAC /* Debug */,
+				52E913AE204E774600A09EAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52E913AF204E774600A09EAC /* Build configuration list for PBXNativeTarget "Savec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E913B0204E774600A09EAC /* Debug */,
+				52E913B1204E774600A09EAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52E913B2204E774600A09EAC /* Build configuration list for PBXNativeTarget "SavecTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E913B3204E774600A09EAC /* Debug */,
+				52E913B4204E774600A09EAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52E913B5204E774600A09EAC /* Build configuration list for PBXNativeTarget "SavecUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E913B6204E774600A09EAC /* Debug */,
+				52E913B7204E774600A09EAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52E9137F204E774600A09EAC /* Project object */;
+}
