@@ -1,0 +1,77 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["s10DictionaryV", ""]
+- ["s10DictionaryV", "key"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "=="
+- !private "AssignmentPrecedence"
+- "Calendar"
+- "Date"
+- "DateFormatter"
+- "Dictionary"
+- "Equatable"
+- !private "Int"
+- !private "dateFormatterComponents"
+depends-member:
+- !private ["s10CollectionP", "0"]
+- ["s10CollectionP", "Equatable"]
+- !private ["s10CollectionP", "index"]
+- !private ["s10CollectionP", "subscript"]
+- ["s28CustomDebugStringConvertibleP", "Equatable"]
+- !private ["s28CustomDebugStringConvertibleP", "index"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- ["s17CustomReflectableP", "Equatable"]
+- !private ["s17CustomReflectableP", "index"]
+- !private ["s17CustomReflectableP", "subscript"]
+- ["s23CustomStringConvertibleP", "Equatable"]
+- !private ["s23CustomStringConvertibleP", "index"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- ["s9DecodableP", "Equatable"]
+- !private ["s9DecodableP", "index"]
+- !private ["s9DecodableP", "subscript"]
+- ["s10DictionaryV", "Equatable"]
+- ["s10DictionaryV", "Key"]
+- ["s10DictionaryV", "Value"]
+- !private ["s10DictionaryV", "index"]
+- ["s10DictionaryV", "key"]
+- !private ["s10DictionaryV", "subscript"]
+- ["s9EncodableP", "Equatable"]
+- !private ["s9EncodableP", "index"]
+- !private ["s9EncodableP", "subscript"]
+- ["s30ExpressibleByDictionaryLiteralP", "Equatable"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "index"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s8SequenceP", "0"]
+- ["s8SequenceP", "Equatable"]
+- !private ["s8SequenceP", "index"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["s5SliceV", "0"]
+- !private ["s10_IndexableP", "0"]
+- ["s10_IndexableP", "Equatable"]
+- !private ["s10_IndexableP", "index"]
+- !private ["s10_IndexableP", "subscript"]
+- !private ["s14_IndexableBaseP", "0"]
+- ["s14_IndexableBaseP", "Equatable"]
+- !private ["s14_IndexableBaseP", "index"]
+- !private ["s14_IndexableBaseP", "subscript"]
+depends-nominal:
+- "s10CollectionP"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "s9DecodableP"
+- "s10DictionaryV"
+- "s9EncodableP"
+- "s30ExpressibleByDictionaryLiteralP"
+- "s8SequenceP"
+- !private "s5SliceV"
+- "s10_IndexableP"
+- "s14_IndexableBaseP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "fc2730f59d116b241bc0a0e61159b804"

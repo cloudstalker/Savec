@@ -1,0 +1,20 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "a8c74259a51daf75ce0d35433fc3a03c"
+build_time: [1520943972, 809901000]
+inputs:
+  "/Users/xinpenghu/Desktop/Savec/Sources/CalendarEnums.swift": !dirty [1514984002, 0]
+  "/Users/xinpenghu/Desktop/Savec/Sources/CalendarStructs.swift": !dirty [1514984002, 0]
+  "/Users/xinpenghu/Desktop/Savec/Sources/GlobalFunctionsAndExtensions.swift": !dirty [1514984002, 0]
+  "/Users/xinpenghu/Desktop/Savec/Sources/InternalActionFunctions.swift": !dirty [1514984002, 0]
+  "/Users/xinpenghu/Desktop/Savec/Sources/InternalQueryFunctions.swift": !dirty [1514984002, 0]
+  "/Users/xinpenghu/Desktop/Savec/Sources/JTAppleCalendarDelegateProtocol.swift": !dirty [1514984002, 0]
+  "/Users/xinpenghu/Desktop/Savec/Sources/JTAppleCalendarLayout.swift": !dirty [1514984002, 0]
+  "/Users/xinpenghu/Desktop/Savec/Sources/JTAppleCalendarLayoutProtocol.swift": !dirty [1514984002, 0]
+  "/Users/xinpenghu/Desktop/Savec/Sources/JTAppleCalendarVariables.swift": !dirty [1514984002, 0]
+  "/Users/xinpenghu/Desktop/Savec/Sources/JTAppleCalendarView.swift": !dirty [1514984002, 0]
+  "/Users/xinpenghu/Desktop/Savec/Sources/JTAppleCell.swift": !dirty [1514984002, 0]
+  "/Users/xinpenghu/Desktop/Savec/Sources/JTAppleCollectionReusableView.swift": !dirty [1514984002, 0]
+  "/Users/xinpenghu/Desktop/Savec/Sources/JTCalendarProtocols.swift": !dirty [1514984002, 0]
+  "/Users/xinpenghu/Desktop/Savec/Sources/UICollectionViewDelegates.swift": !dirty [1514984002, 0]
+  "/Users/xinpenghu/Desktop/Savec/Sources/UIScrollViewDelegates.swift": !dirty [1514984002, 0]
+  "/Users/xinpenghu/Desktop/Savec/Sources/UserInteractionFunctions.swift": !dirty [1514984002, 0]

@@ -1,0 +1,453 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["15JTAppleCalendar0aB4ViewC", ""]
+- ["15JTAppleCalendar0aB4ViewC", "layoutSubviews"]
+- ["15JTAppleCalendar0aB4ViewC", "setupMonthInfoAndMap"]
+- ["15JTAppleCalendar0aB4ViewC", "developerError"]
+- ["15JTAppleCalendar0aB4ViewC", "setupNewLayout"]
+- ["15JTAppleCalendar0aB4ViewC", "scrollTo"]
+- ["15JTAppleCalendar0aB4ViewC", "scrollToHeaderInSection"]
+- ["15JTAppleCalendar0aB4ViewC", "reloadData"]
+- ["15JTAppleCalendar0aB4ViewC", "handleScroll"]
+- ["15JTAppleCalendar0aB4ViewC", "scrollTo"]
+- ["15JTAppleCalendar0aB4ViewC", "setupMonthInfoDataForStartAndEndDate"]
+- ["15JTAppleCalendar0aB4ViewC", "batchReloadIndexPaths"]
+- ["15JTAppleCalendar0aB4ViewC", "addCellToSelectedSet"]
+- ["15JTAppleCalendar0aB4ViewC", "deleteCellFromSelectedSetIfSelected"]
+- ["15JTAppleCalendar0aB4ViewC", "deselectCounterPartCellIndexPath"]
+- ["15JTAppleCalendar0aB4ViewC", "selectCounterPartCellIndexPath"]
+- ["15JTAppleCalendar0aB4ViewC", "executeDelayedTasks"]
+- ["15JTAppleCalendar0aB4ViewC", "reloadDelegateDataSource"]
+- ["15JTAppleCalendar0aB4ViewC", "remapSelectedDatesWithCurrentLayout"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "!="
+- !private "+="
+- !private "-"
+- !private "=="
+- !private "??"
+- !private "Array"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "CGFloat"
+- "CGPoint"
+- "CalendarData"
+- "CellState"
+- !private "ComparisonResult"
+- "ConfigurationParameters"
+- "Date"
+- "DateOwner"
+- "DelayedTaskType"
+- !private "Dictionary"
+- !private "DispatchQueue"
+- !private "FloatLiteralType"
+- "IndexPath"
+- "Int"
+- !private "IntegerLiteralType"
+- !private "JTAppleCalendarLayout"
+- "JTAppleCalendarLayoutProtocol"
+- "JTAppleCalendarView"
+- !private "JTAppleCell"
+- !private "Month"
+- !private "SelectedCellData"
+- "String"
+- "TernaryPrecedence"
+- !private "UICollectionElementKindSectionHeader"
+- "UICollectionViewScrollPosition"
+- !private "UIScrollViewDecelerationRateFast"
+- "Void"
+- !private "allowsMultipleSelection"
+- !private "assert"
+- !private "collectionViewLayout"
+- !private "decelerationRate"
+- !private "deselectItem"
+- !private "developerErrorMessage"
+- !private "indexPathsForVisibleItems"
+- !private "max"
+- !private "min"
+- !private "print"
+- !private "selectItem"
+- !private "transform"
+- !private "||"
+- !private "~="
+depends-member:
+- !private ["Sa", "append"]
+- !private ["Sa", "init"]
+- !private ["Sa", "isEmpty"]
+- !private ["Sa", "removeAll"]
+- !private ["s23BidirectionalCollectionP", "append"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "isEmpty"]
+- !private ["s23BidirectionalCollectionP", "nonStopToCell"]
+- !private ["s23BidirectionalCollectionP", "removeAll"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["15JTAppleCalendar0B4DataV", "init"]
+- !private ["s11ClosedRangeV", "nonStopToCell"]
+- !private ["s10CollectionP", "append"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "isEmpty"]
+- !private ["s10CollectionP", "nonStopToCell"]
+- !private ["s10CollectionP", "removeAll"]
+- !private ["s10ComparableP", "init"]
+- !private ["15JTAppleCalendar23ConfigurationParametersV", "calendar"]
+- !private ["15JTAppleCalendar23ConfigurationParametersV", "endDate"]
+- !private ["15JTAppleCalendar23ConfigurationParametersV", "firstDayOfWeek"]
+- !private ["15JTAppleCalendar23ConfigurationParametersV", "generateInDates"]
+- !private ["15JTAppleCalendar23ConfigurationParametersV", "generateOutDates"]
+- !private ["15JTAppleCalendar23ConfigurationParametersV", "hasStrictBoundaries"]
+- ["15JTAppleCalendar23ConfigurationParametersV", "init"]
+- !private ["15JTAppleCalendar23ConfigurationParametersV", "numberOfRows"]
+- !private ["15JTAppleCalendar23ConfigurationParametersV", "startDate"]
+- !private ["s20CountableClosedRangeV", "nonStopToCell"]
+- !private ["s14CountableRangeV", "nonStopToCell"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
+- !private ["s28CustomDebugStringConvertibleP", "nonStopToCell"]
+- !private ["s28CustomDebugStringConvertibleP", "removeAll"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "isEmpty"]
+- !private ["s17CustomReflectableP", "nonStopToCell"]
+- !private ["s17CustomReflectableP", "removeAll"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isEmpty"]
+- !private ["s23CustomStringConvertibleP", "nonStopToCell"]
+- !private ["s23CustomStringConvertibleP", "removeAll"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "append"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "isEmpty"]
+- !private ["s9DecodableP", "removeAll"]
+- ["15JTAppleCalendar15DelayedTaskTypeO", "general"]
+- ["15JTAppleCalendar15DelayedTaskTypeO", "scroll"]
+- !private ["s10DictionaryV", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "append"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "isEmpty"]
+- !private ["s9EncodableP", "removeAll"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- ["s9EquatableP", "general"]
+- !private ["s9EquatableP", "init"]
+- ["s9EquatableP", "nonStopToCell"]
+- ["s9EquatableP", "none"]
+- ["s9EquatableP", "scroll"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "isEmpty"]
+- !private ["s25ExpressibleByArrayLiteralP", "removeAll"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "nonStopToCell"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- ["s8HashableP", "general"]
+- !private ["s8HashableP", "init"]
+- ["s8HashableP", "scroll"]
+- ["15JTAppleCalendar0aB16DelegateProtocolP", "CGFloat"]
+- ["15JTAppleCalendar0aB16DelegateProtocolP", "CGPoint"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "CalendarData"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "ComparisonResult"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "ConfigurationParameters"]
+- ["15JTAppleCalendar0aB16DelegateProtocolP", "Date"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "DispatchQueue"]
+- ["15JTAppleCalendar0aB16DelegateProtocolP", "IndexPath"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "Int"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "JTAppleCalendarLayout"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "Month"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "SelectedCellData"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "UICollectionElementKindSectionHeader"]
+- ["15JTAppleCalendar0aB16DelegateProtocolP", "UICollectionViewScrollPosition"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "UIScrollViewDecelerationRateFast"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "addCellToSelectedSet"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "allowsDateCellStretching"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "allowsMultipleSelection"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "assert"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "cachedConfiguration"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "calendar"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "calendarDataSource"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "calendarViewLayout"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "cellStateFromIndexPath"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "collectionViewLayout"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "contentSize"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "dateGenerator"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "decelerationRate"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "deleteCellFromSelectedSetIfSelected"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "deselectItem"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "developerErrorMessage"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "endDateCache"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "endOfMonthCache"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "executeDelayedTasks"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "frame"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "generalDelayedExecutionClosure"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "indexPathOfdateCellCounterPath"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "indexPathsForVisibleItems"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "isCalendarLayoutLoaded"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "isScrollInProgress"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "lastMonthSize"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "max"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "min"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "minimumInteritemSpacing"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "minimumLineSpacing"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "pathsFromDates"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "print"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "scrollDelayedExecutionClosure"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "scrollDirection"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "scrollTo"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "scrollToHeaderInSection"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "scrollingMode"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "sectionInset"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "selectItem"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "selectedCellData"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "selectedDates"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "semanticContentAttribute"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "setupMonthInfoDataForStartAndEndDate"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "sizesForMonthSection"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "startDateCache"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "startOfMonthCache"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "theData"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "transform"]
+- !private ["15JTAppleCalendar0aB16DelegateProtocolP", "triggerScrollToDateDelegate"]
+- ["15JTAppleCalendar0aB6LayoutC", "init"]
+- !private ["15JTAppleCalendar0aB6LayoutC", "layoutAttributesForSupplementaryView"]
+- !private ["15JTAppleCalendar0aB6LayoutC", "thereAreHeaders"]
+- !private ["15JTAppleCalendar0aB14LayoutProtocolP", "init"]
+- !private ["15JTAppleCalendar0aB14LayoutProtocolP", "layoutAttributesForSupplementaryView"]
+- !private ["15JTAppleCalendar0aB14LayoutProtocolP", "thereAreHeaders"]
+- ["15JTAppleCalendar0aB4ViewC", "Bool"]
+- ["15JTAppleCalendar0aB4ViewC", "CGFloat"]
+- ["15JTAppleCalendar0aB4ViewC", "CGPoint"]
+- ["15JTAppleCalendar0aB4ViewC", "CalendarData"]
+- ["15JTAppleCalendar0aB4ViewC", "CellState"]
+- !private ["15JTAppleCalendar0aB4ViewC", "ComparisonResult"]
+- ["15JTAppleCalendar0aB4ViewC", "ConfigurationParameters"]
+- ["15JTAppleCalendar0aB4ViewC", "Date"]
+- ["15JTAppleCalendar0aB4ViewC", "DateOwner"]
+- ["15JTAppleCalendar0aB4ViewC", "DelayedTaskType"]
+- !private ["15JTAppleCalendar0aB4ViewC", "DispatchQueue"]
+- ["15JTAppleCalendar0aB4ViewC", "IndexPath"]
+- ["15JTAppleCalendar0aB4ViewC", "Int"]
+- !private ["15JTAppleCalendar0aB4ViewC", "JTAppleCalendarLayout"]
+- ["15JTAppleCalendar0aB4ViewC", "JTAppleCalendarLayoutProtocol"]
+- !private ["15JTAppleCalendar0aB4ViewC", "JTAppleCell"]
+- !private ["15JTAppleCalendar0aB4ViewC", "Month"]
+- !private ["15JTAppleCalendar0aB4ViewC", "SelectedCellData"]
+- ["15JTAppleCalendar0aB4ViewC", "String"]
+- !private ["15JTAppleCalendar0aB4ViewC", "UICollectionElementKindSectionHeader"]
+- ["15JTAppleCalendar0aB4ViewC", "UICollectionViewScrollPosition"]
+- !private ["15JTAppleCalendar0aB4ViewC", "UIScrollViewDecelerationRateFast"]
+- ["15JTAppleCalendar0aB4ViewC", "Void"]
+- !private ["15JTAppleCalendar0aB4ViewC", "addCellToSelectedSet"]
+- !private ["15JTAppleCalendar0aB4ViewC", "allowsDateCellStretching"]
+- !private ["15JTAppleCalendar0aB4ViewC", "allowsMultipleSelection"]
+- !private ["15JTAppleCalendar0aB4ViewC", "assert"]
+- !private ["15JTAppleCalendar0aB4ViewC", "cachedConfiguration"]
+- !private ["15JTAppleCalendar0aB4ViewC", "calendar"]
+- !private ["15JTAppleCalendar0aB4ViewC", "calendarDataSource"]
+- !private ["15JTAppleCalendar0aB4ViewC", "calendarViewLayout"]
+- !private ["15JTAppleCalendar0aB4ViewC", "cellStateFromIndexPath"]
+- !private ["15JTAppleCalendar0aB4ViewC", "collectionViewLayout"]
+- !private ["15JTAppleCalendar0aB4ViewC", "contentSize"]
+- !private ["15JTAppleCalendar0aB4ViewC", "dateGenerator"]
+- !private ["15JTAppleCalendar0aB4ViewC", "decelerationRate"]
+- !private ["15JTAppleCalendar0aB4ViewC", "deinit"]
+- !private ["15JTAppleCalendar0aB4ViewC", "deleteCellFromSelectedSetIfSelected"]
+- !private ["15JTAppleCalendar0aB4ViewC", "deselectItem"]
+- ["15JTAppleCalendar0aB4ViewC", "developerError"]
+- !private ["15JTAppleCalendar0aB4ViewC", "developerErrorMessage"]
+- !private ["15JTAppleCalendar0aB4ViewC", "endDateCache"]
+- !private ["15JTAppleCalendar0aB4ViewC", "endOfMonthCache"]
+- ["15JTAppleCalendar0aB4ViewC", "executeDelayedTasks"]
+- !private ["15JTAppleCalendar0aB4ViewC", "frame"]
+- !private ["15JTAppleCalendar0aB4ViewC", "generalDelayedExecutionClosure"]
+- !private ["15JTAppleCalendar0aB4ViewC", "indexPathOfdateCellCounterPath"]
+- !private ["15JTAppleCalendar0aB4ViewC", "indexPathsForVisibleItems"]
+- !private ["15JTAppleCalendar0aB4ViewC", "isCalendarLayoutLoaded"]
+- !private ["15JTAppleCalendar0aB4ViewC", "isScrollInProgress"]
+- !private ["15JTAppleCalendar0aB4ViewC", "lastMonthSize"]
+- ["15JTAppleCalendar0aB4ViewC", "layoutSubviews"]
+- !private ["15JTAppleCalendar0aB4ViewC", "max"]
+- !private ["15JTAppleCalendar0aB4ViewC", "min"]
+- !private ["15JTAppleCalendar0aB4ViewC", "minimumInteritemSpacing"]
+- !private ["15JTAppleCalendar0aB4ViewC", "minimumLineSpacing"]
+- !private ["15JTAppleCalendar0aB4ViewC", "pathsFromDates"]
+- !private ["15JTAppleCalendar0aB4ViewC", "print"]
+- ["15JTAppleCalendar0aB4ViewC", "reloadData"]
+- ["15JTAppleCalendar0aB4ViewC", "reloadDelegateDataSource"]
+- !private ["15JTAppleCalendar0aB4ViewC", "scrollDelayedExecutionClosure"]
+- !private ["15JTAppleCalendar0aB4ViewC", "scrollDirection"]
+- !private ["15JTAppleCalendar0aB4ViewC", "scrollTo"]
+- !private ["15JTAppleCalendar0aB4ViewC", "scrollToHeaderInSection"]
+- !private ["15JTAppleCalendar0aB4ViewC", "scrollingMode"]
+- !private ["15JTAppleCalendar0aB4ViewC", "sectionInset"]
+- !private ["15JTAppleCalendar0aB4ViewC", "selectItem"]
+- !private ["15JTAppleCalendar0aB4ViewC", "selectedCellData"]
+- !private ["15JTAppleCalendar0aB4ViewC", "selectedDates"]
+- !private ["15JTAppleCalendar0aB4ViewC", "semanticContentAttribute"]
+- ["15JTAppleCalendar0aB4ViewC", "setupMonthInfoAndMap"]
+- ["15JTAppleCalendar0aB4ViewC", "setupMonthInfoDataForStartAndEndDate"]
+- ["15JTAppleCalendar0aB4ViewC", "setupNewLayout"]
+- !private ["15JTAppleCalendar0aB4ViewC", "sizesForMonthSection"]
+- !private ["15JTAppleCalendar0aB4ViewC", "startDateCache"]
+- !private ["15JTAppleCalendar0aB4ViewC", "startOfMonthCache"]
+- !private ["15JTAppleCalendar0aB4ViewC", "theData"]
+- !private ["15JTAppleCalendar0aB4ViewC", "transform"]
+- !private ["15JTAppleCalendar0aB4ViewC", "triggerScrollToDateDelegate"]
+- !private ["15JTAppleCalendar0aB14ViewDataSourceP", "configureCalendar"]
+- !private ["15JTAppleCalendar0A19DateConfigGeneratorV", "setupMonthInfoDataForStartAndEndDate"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s17MutableCollectionP", "append"]
+- !private ["s17MutableCollectionP", "init"]
+- !private ["s17MutableCollectionP", "isEmpty"]
+- !private ["s17MutableCollectionP", "removeAll"]
+- !private ["s22RandomAccessCollectionP", "append"]
+- !private ["s22RandomAccessCollectionP", "init"]
+- !private ["s22RandomAccessCollectionP", "isEmpty"]
+- !private ["s22RandomAccessCollectionP", "nonStopToCell"]
+- !private ["s22RandomAccessCollectionP", "removeAll"]
+- !private ["s5RangeV", "nonStopToCell"]
+- !private ["s15RangeExpressionP", "nonStopToCell"]
+- !private ["s26RangeReplaceableCollectionP", "append"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "isEmpty"]
+- !private ["s26RangeReplaceableCollectionP", "removeAll"]
+- !private ["15JTAppleCalendar13ScrollingModeO", "deinit"]
+- ["15JTAppleCalendar13ScrollingModeO", "nonStopToCell"]
+- ["15JTAppleCalendar13ScrollingModeO", "none"]
+- !private ["s8SequenceP", "append"]
+- !private ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "isEmpty"]
+- !private ["s8SequenceP", "nonStopToCell"]
+- !private ["s8SequenceP", "removeAll"]
+- !private ["s12StaticStringV", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "init"]
+- !private ["s14_ArrayProtocolP", "isEmpty"]
+- !private ["s14_ArrayProtocolP", "removeAll"]
+- !private ["s23_BidirectionalIndexableP", "append"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s23_BidirectionalIndexableP", "isEmpty"]
+- !private ["s23_BidirectionalIndexableP", "nonStopToCell"]
+- !private ["s23_BidirectionalIndexableP", "removeAll"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "init"]
+- !private ["s24_DestructorSafeContainerP", "isEmpty"]
+- !private ["s24_DestructorSafeContainerP", "removeAll"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s10_IndexableP", "append"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s10_IndexableP", "isEmpty"]
+- !private ["s10_IndexableP", "nonStopToCell"]
+- !private ["s10_IndexableP", "removeAll"]
+- !private ["s14_IndexableBaseP", "append"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["s14_IndexableBaseP", "isEmpty"]
+- !private ["s14_IndexableBaseP", "nonStopToCell"]
+- !private ["s14_IndexableBaseP", "removeAll"]
+- !private ["s17_MutableIndexableP", "append"]
+- !private ["s17_MutableIndexableP", "init"]
+- !private ["s17_MutableIndexableP", "isEmpty"]
+- !private ["s17_MutableIndexableP", "removeAll"]
+- !private ["s26_OptionalNilComparisonTypeV", "nonStopToCell"]
+- !private ["s22_RandomAccessIndexableP", "append"]
+- !private ["s22_RandomAccessIndexableP", "init"]
+- !private ["s22_RandomAccessIndexableP", "isEmpty"]
+- !private ["s22_RandomAccessIndexableP", "nonStopToCell"]
+- !private ["s22_RandomAccessIndexableP", "removeAll"]
+- !private ["s26_RangeReplaceableIndexableP", "append"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "isEmpty"]
+- !private ["s26_RangeReplaceableIndexableP", "removeAll"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "Sa"
+- !private "s23BidirectionalCollectionP"
+- !private "Sb"
+- !private "15JTAppleCalendar0B4DataV"
+- !private "s11ClosedRangeV"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "15JTAppleCalendar23ConfigurationParametersV"
+- !private "s20CountableClosedRangeV"
+- !private "s14CountableRangeV"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- "15JTAppleCalendar15DelayedTaskTypeO"
+- !private "s10DictionaryV"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- "15JTAppleCalendar0aB16DelegateProtocolP"
+- "15JTAppleCalendar0aB6LayoutC"
+- !private "15JTAppleCalendar0aB14LayoutProtocolP"
+- "15JTAppleCalendar0aB4ViewC"
+- !private "15JTAppleCalendar0aB14ViewDataSourceP"
+- !private "15JTAppleCalendar0A19DateConfigGeneratorV"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "s17MutableCollectionP"
+- !private "s22RandomAccessCollectionP"
+- !private "s5RangeV"
+- !private "s15RangeExpressionP"
+- !private "s26RangeReplaceableCollectionP"
+- "15JTAppleCalendar13ScrollingModeO"
+- !private "s8SequenceP"
+- !private "s12StaticStringV"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "s14_ArrayProtocolP"
+- !private "s23_BidirectionalIndexableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- !private "s17_MutableIndexableP"
+- !private "s26_OptionalNilComparisonTypeV"
+- !private "s22_RandomAccessIndexableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "76635a507afd19a2905767a4c5bdf267"

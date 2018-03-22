@@ -1,0 +1,495 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CellState"
+- "ConfigurationParameters"
+- "MonthSize"
+- "CalendarData"
+- "Month"
+- "JTAppleDateConfigGenerator"
+- "DateSegmentInfo"
+- "SelectedCellData"
+provides-nominal:
+- "15JTAppleCalendar9CellStateV"
+- "15JTAppleCalendar23ConfigurationParametersV"
+- "15JTAppleCalendar9MonthSizeV"
+- "15JTAppleCalendar0B4DataV"
+- "15JTAppleCalendar5MonthV"
+- "15JTAppleCalendar0A19DateConfigGeneratorV"
+- "15JTAppleCalendar15DateSegmentInfoV"
+- "15JTAppleCalendar16SelectedCellDataV"
+- "15JTAppleCalendar16SelectedCellDataV17DateOwnerCategoryO"
+provides-member:
+- ["15JTAppleCalendar9CellStateV", ""]
+- ["15JTAppleCalendar23ConfigurationParametersV", ""]
+- ["15JTAppleCalendar9MonthSizeV", ""]
+- ["15JTAppleCalendar0B4DataV", ""]
+- ["15JTAppleCalendar5MonthV", ""]
+- ["15JTAppleCalendar0A19DateConfigGeneratorV", ""]
+- ["15JTAppleCalendar15DateSegmentInfoV", ""]
+- ["15JTAppleCalendar16SelectedCellDataV", ""]
+- ["15JTAppleCalendar16SelectedCellDataV17DateOwnerCategoryO", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "&&"
+- !private "+"
+- !private "-"
+- !private "-="
+- !private "..<"
+- !private "/"
+- !private "<"
+- !private "<="
+- "=="
+- !private ">"
+- !private "??"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "CGFloat"
+- "Calendar"
+- "CalendarData"
+- "CellState"
+- "ConfigurationParameters"
+- "Date"
+- "DateOwner"
+- "DateSegmentInfo"
+- "DaysOfWeek"
+- !private "FloatLiteralType"
+- "InDateCellGeneration"
+- "IndexPath"
+- "Int"
+- !private "IntegerLiteralType"
+- "JTAppleCell"
+- "JTAppleDateConfigGenerator"
+- "Month"
+- "MonthSize"
+- "MonthsOfYear"
+- "OutDateCellGeneration"
+- "SelectedCellData"
+- "SelectionRangePosition"
+- "SelectionType"
+- "String"
+- "TernaryPrecedence"
+- !private "~="
+depends-member:
+- !private ["Sa", "count"]
+- !private ["Sa", "index"]
+- !private ["Sa", "subscript"]
+- !private ["s10ArraySliceV", "reduce"]
+- !private ["s23BidirectionalCollectionP", "count"]
+- !private ["s23BidirectionalCollectionP", "index"]
+- !private ["s23BidirectionalCollectionP", "reduce"]
+- !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["s13BinaryIntegerP", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "hashValue"]
+- ["15JTAppleCalendar0B4DataV", "Int"]
+- ["15JTAppleCalendar0B4DataV", "Month"]
+- ["15JTAppleCalendar0B4DataV", "init"]
+- ["15JTAppleCalendar0B4DataV", "months"]
+- ["15JTAppleCalendar0B4DataV", "sectionToMonthMap"]
+- ["15JTAppleCalendar0B4DataV", "totalDays"]
+- ["15JTAppleCalendar0B4DataV", "totalSections"]
+- ["15JTAppleCalendar9CellStateV", "Bool"]
+- ["15JTAppleCalendar9CellStateV", "Date"]
+- ["15JTAppleCalendar9CellStateV", "DateOwner"]
+- ["15JTAppleCalendar9CellStateV", "DaysOfWeek"]
+- ["15JTAppleCalendar9CellStateV", "Int"]
+- ["15JTAppleCalendar9CellStateV", "JTAppleCell"]
+- ["15JTAppleCalendar9CellStateV", "SelectionRangePosition"]
+- ["15JTAppleCalendar9CellStateV", "SelectionType"]
+- ["15JTAppleCalendar9CellStateV", "String"]
+- ["15JTAppleCalendar9CellStateV", "cell"]
+- ["15JTAppleCalendar9CellStateV", "column"]
+- ["15JTAppleCalendar9CellStateV", "dateBelongsTo"]
+- ["15JTAppleCalendar9CellStateV", "day"]
+- ["15JTAppleCalendar9CellStateV", "isSelected"]
+- ["15JTAppleCalendar9CellStateV", "row"]
+- ["15JTAppleCalendar9CellStateV", "selectedPosition"]
+- ["15JTAppleCalendar9CellStateV", "selectionType"]
+- ["15JTAppleCalendar9CellStateV", "text"]
+- !private ["s10CollectionP", "count"]
+- !private ["s10CollectionP", "index"]
+- !private ["s10CollectionP", "key"]
+- !private ["s10CollectionP", "keys"]
+- !private ["s10CollectionP", "min"]
+- !private ["s10CollectionP", "reduce"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s10ComparableP", "hashValue"]
+- ["15JTAppleCalendar23ConfigurationParametersV", "Bool"]
+- ["15JTAppleCalendar23ConfigurationParametersV", "Calendar"]
+- ["15JTAppleCalendar23ConfigurationParametersV", "Date"]
+- ["15JTAppleCalendar23ConfigurationParametersV", "DaysOfWeek"]
+- ["15JTAppleCalendar23ConfigurationParametersV", "InDateCellGeneration"]
+- ["15JTAppleCalendar23ConfigurationParametersV", "Int"]
+- ["15JTAppleCalendar23ConfigurationParametersV", "OutDateCellGeneration"]
+- !private ["15JTAppleCalendar23ConfigurationParametersV", "calendar"]
+- !private ["15JTAppleCalendar23ConfigurationParametersV", "endDate"]
+- ["15JTAppleCalendar23ConfigurationParametersV", "firstDayOfWeek"]
+- ["15JTAppleCalendar23ConfigurationParametersV", "generateInDates"]
+- ["15JTAppleCalendar23ConfigurationParametersV", "generateOutDates"]
+- ["15JTAppleCalendar23ConfigurationParametersV", "hasStrictBoundaries"]
+- ["15JTAppleCalendar23ConfigurationParametersV", "numberOfRows"]
+- !private ["15JTAppleCalendar23ConfigurationParametersV", "startDate"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "index"]
+- !private ["s28CustomDebugStringConvertibleP", "key"]
+- !private ["s28CustomDebugStringConvertibleP", "keys"]
+- !private ["s28CustomDebugStringConvertibleP", "reduce"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "hashValue"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "hashValue"]
+- !private ["s17CustomReflectableP", "index"]
+- !private ["s17CustomReflectableP", "key"]
+- !private ["s17CustomReflectableP", "keys"]
+- !private ["s17CustomReflectableP", "reduce"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "hashValue"]
+- !private ["s23CustomStringConvertibleP", "index"]
+- !private ["s23CustomStringConvertibleP", "key"]
+- !private ["s23CustomStringConvertibleP", "keys"]
+- !private ["s23CustomStringConvertibleP", "reduce"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- ["15JTAppleCalendar9DateOwnerO", "followingMonthOutsideBoundary"]
+- ["15JTAppleCalendar9DateOwnerO", "followingMonthWithinBoundary"]
+- ["15JTAppleCalendar9DateOwnerO", "previousMonthOutsideBoundary"]
+- ["15JTAppleCalendar9DateOwnerO", "previousMonthWithinBoundary"]
+- ["15JTAppleCalendar9DateOwnerO", "thisMonth"]
+- ["15JTAppleCalendar16SelectedCellDataV17DateOwnerCategoryO", "__derived_enum_equals"]
+- ["15JTAppleCalendar16SelectedCellDataV17DateOwnerCategoryO", "deinit"]
+- ["15JTAppleCalendar16SelectedCellDataV17DateOwnerCategoryO", "hashValue"]
+- ["15JTAppleCalendar16SelectedCellDataV17DateOwnerCategoryO", "inDate"]
+- ["15JTAppleCalendar16SelectedCellDataV17DateOwnerCategoryO", "monthDate"]
+- ["15JTAppleCalendar16SelectedCellDataV17DateOwnerCategoryO", "outDate"]
+- ["15JTAppleCalendar15DateSegmentInfoV", "Date"]
+- !private ["15JTAppleCalendar10DaysOfWeekO", "friday"]
+- !private ["15JTAppleCalendar10DaysOfWeekO", "monday"]
+- !private ["15JTAppleCalendar10DaysOfWeekO", "saturday"]
+- !private ["15JTAppleCalendar10DaysOfWeekO", "sunday"]
+- !private ["15JTAppleCalendar10DaysOfWeekO", "thursday"]
+- !private ["15JTAppleCalendar10DaysOfWeekO", "tuesday"]
+- !private ["15JTAppleCalendar10DaysOfWeekO", "wednesday"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "count"]
+- !private ["s9DecodableP", "hashValue"]
+- !private ["s9DecodableP", "index"]
+- !private ["s9DecodableP", "key"]
+- !private ["s9DecodableP", "keys"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s10DictionaryV", "key"]
+- !private ["s10DictionaryV", "keys"]
+- !private ["s10DictionaryV", "subscript"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "count"]
+- !private ["s9EncodableP", "hashValue"]
+- !private ["s9EncodableP", "index"]
+- !private ["s9EncodableP", "key"]
+- !private ["s9EncodableP", "keys"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "apr"]
+- !private ["s9EquatableP", "aug"]
+- !private ["s9EquatableP", "dec"]
+- !private ["s9EquatableP", "feb"]
+- ["s9EquatableP", "followingMonthOutsideBoundary"]
+- ["s9EquatableP", "followingMonthWithinBoundary"]
+- !private ["s9EquatableP", "forAllMonths"]
+- !private ["s9EquatableP", "friday"]
+- ["s9EquatableP", "hashValue"]
+- !private ["s9EquatableP", "inDate"]
+- !private ["s9EquatableP", "jan"]
+- !private ["s9EquatableP", "jul"]
+- !private ["s9EquatableP", "jun"]
+- !private ["s9EquatableP", "mar"]
+- !private ["s9EquatableP", "may"]
+- !private ["s9EquatableP", "monday"]
+- !private ["s9EquatableP", "monthDate"]
+- !private ["s9EquatableP", "nov"]
+- !private ["s9EquatableP", "oct"]
+- !private ["s9EquatableP", "outDate"]
+- ["s9EquatableP", "previousMonthOutsideBoundary"]
+- ["s9EquatableP", "previousMonthWithinBoundary"]
+- !private ["s9EquatableP", "saturday"]
+- !private ["s9EquatableP", "sep"]
+- !private ["s9EquatableP", "sunday"]
+- ["s9EquatableP", "thisMonth"]
+- !private ["s9EquatableP", "thursday"]
+- !private ["s9EquatableP", "tillEndOfGrid"]
+- !private ["s9EquatableP", "tuesday"]
+- !private ["s9EquatableP", "wednesday"]
+- ["s9EquatableP", ""]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "index"]
+- !private ["s25ExpressibleByArrayLiteralP", "reduce"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "key"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "keys"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s27ExpressibleByIntegerLiteralP", "hashValue"]
+- !private ["s17FixedWidthIntegerP", "hashValue"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "apr"]
+- !private ["s8HashableP", "aug"]
+- !private ["s8HashableP", "dec"]
+- !private ["s8HashableP", "feb"]
+- ["s8HashableP", "followingMonthOutsideBoundary"]
+- ["s8HashableP", "followingMonthWithinBoundary"]
+- !private ["s8HashableP", "forAllMonths"]
+- !private ["s8HashableP", "friday"]
+- ["s8HashableP", "hashValue"]
+- !private ["s8HashableP", "inDate"]
+- !private ["s8HashableP", "jan"]
+- !private ["s8HashableP", "jul"]
+- !private ["s8HashableP", "jun"]
+- !private ["s8HashableP", "mar"]
+- !private ["s8HashableP", "may"]
+- !private ["s8HashableP", "monday"]
+- !private ["s8HashableP", "monthDate"]
+- !private ["s8HashableP", "nov"]
+- !private ["s8HashableP", "oct"]
+- !private ["s8HashableP", "outDate"]
+- ["s8HashableP", "previousMonthOutsideBoundary"]
+- ["s8HashableP", "previousMonthWithinBoundary"]
+- !private ["s8HashableP", "saturday"]
+- !private ["s8HashableP", "sep"]
+- !private ["s8HashableP", "sunday"]
+- ["s8HashableP", "thisMonth"]
+- !private ["s8HashableP", "thursday"]
+- !private ["s8HashableP", "tillEndOfGrid"]
+- !private ["s8HashableP", "tuesday"]
+- !private ["s8HashableP", "wednesday"]
+- ["s8HashableP", ""]
+- !private ["15JTAppleCalendar20InDateCellGenerationO", "forAllMonths"]
+- !private ["Si", "hashValue"]
+- !private ["15JTAppleCalendar0A19DateConfigGeneratorV", "Calendar"]
+- ["15JTAppleCalendar0A19DateConfigGeneratorV", "ConfigurationParameters"]
+- !private ["15JTAppleCalendar0A19DateConfigGeneratorV", "Date"]
+- !private ["15JTAppleCalendar0A19DateConfigGeneratorV", "DaysOfWeek"]
+- ["15JTAppleCalendar0A19DateConfigGeneratorV", "Int"]
+- ["15JTAppleCalendar0A19DateConfigGeneratorV", "Month"]
+- !private ["15JTAppleCalendar0A19DateConfigGeneratorV", "MonthsOfYear"]
+- ["15JTAppleCalendar0A19DateConfigGeneratorV", "init"]
+- ["15JTAppleCalendar0A19DateConfigGeneratorV", "setupMonthInfoDataForStartAndEndDate"]
+- !private ["s22LazyCollectionProtocolP", "min"]
+- !private ["s17LazyMapCollectionV", "min"]
+- !private ["s20LazySequenceProtocolP", "min"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "hashValue"]
+- !private ["s10MirrorPathP", "hashValue"]
+- ["15JTAppleCalendar5MonthV", "IndexPath"]
+- ["15JTAppleCalendar5MonthV", "Int"]
+- ["15JTAppleCalendar5MonthV", "MonthsOfYear"]
+- ["15JTAppleCalendar5MonthV", "boundaryIndicesFor"]
+- ["15JTAppleCalendar5MonthV", "inDates"]
+- ["15JTAppleCalendar5MonthV", "init"]
+- ["15JTAppleCalendar5MonthV", "maxNumberOfRowsForFull"]
+- ["15JTAppleCalendar5MonthV", "name"]
+- ["15JTAppleCalendar5MonthV", "numberOfDaysInMonth"]
+- ["15JTAppleCalendar5MonthV", "numberOfDaysInMonthGrid"]
+- ["15JTAppleCalendar5MonthV", "numberOfRows"]
+- ["15JTAppleCalendar5MonthV", "outDates"]
+- ["15JTAppleCalendar5MonthV", "rows"]
+- !private ["15JTAppleCalendar5MonthV", "sectionFor"]
+- ["15JTAppleCalendar5MonthV", "sectionIndexMaps"]
+- ["15JTAppleCalendar5MonthV", "sections"]
+- ["15JTAppleCalendar5MonthV", "startCellIndex"]
+- ["15JTAppleCalendar5MonthV", "startDayIndex"]
+- ["15JTAppleCalendar5MonthV", "startSection"]
+- ["15JTAppleCalendar9MonthSizeV", "CGFloat"]
+- !private ["15JTAppleCalendar9MonthSizeV", "dates"]
+- !private ["15JTAppleCalendar9MonthSizeV", "defaultSize"]
+- !private ["15JTAppleCalendar9MonthSizeV", "months"]
+- !private ["15JTAppleCalendar12MonthsOfYearO", "apr"]
+- !private ["15JTAppleCalendar12MonthsOfYearO", "aug"]
+- !private ["15JTAppleCalendar12MonthsOfYearO", "dec"]
+- !private ["15JTAppleCalendar12MonthsOfYearO", "feb"]
+- !private ["15JTAppleCalendar12MonthsOfYearO", "jan"]
+- !private ["15JTAppleCalendar12MonthsOfYearO", "jul"]
+- !private ["15JTAppleCalendar12MonthsOfYearO", "jun"]
+- !private ["15JTAppleCalendar12MonthsOfYearO", "mar"]
+- !private ["15JTAppleCalendar12MonthsOfYearO", "may"]
+- !private ["15JTAppleCalendar12MonthsOfYearO", "nov"]
+- !private ["15JTAppleCalendar12MonthsOfYearO", "oct"]
+- !private ["15JTAppleCalendar12MonthsOfYearO", "sep"]
+- !private ["s25MutableBidirectionalSliceV", "reduce"]
+- !private ["s17MutableCollectionP", "count"]
+- !private ["s17MutableCollectionP", "index"]
+- !private ["s17MutableCollectionP", "reduce"]
+- !private ["s17MutableCollectionP", "subscript"]
+- !private ["s24MutableRandomAccessSliceV", "reduce"]
+- !private ["s12MutableSliceV", "reduce"]
+- !private ["s7NumericP", "hashValue"]
+- !private ["15JTAppleCalendar21OutDateCellGenerationO", "tillEndOfGrid"]
+- !private ["s22RandomAccessCollectionP", "count"]
+- !private ["s22RandomAccessCollectionP", "index"]
+- !private ["s22RandomAccessCollectionP", "reduce"]
+- !private ["s22RandomAccessCollectionP", "subscript"]
+- !private ["s26RangeReplaceableCollectionP", "count"]
+- !private ["s26RangeReplaceableCollectionP", "index"]
+- !private ["s26RangeReplaceableCollectionP", "reduce"]
+- !private ["s26RangeReplaceableCollectionP", "subscript"]
+- !private ["s21RangeReplaceableSliceV", "reduce"]
+- !private ["s16RawRepresentableP", "apr"]
+- !private ["s16RawRepresentableP", "aug"]
+- !private ["s16RawRepresentableP", "dec"]
+- !private ["s16RawRepresentableP", "feb"]
+- ["s16RawRepresentableP", "followingMonthOutsideBoundary"]
+- ["s16RawRepresentableP", "followingMonthWithinBoundary"]
+- !private ["s16RawRepresentableP", "friday"]
+- !private ["s16RawRepresentableP", "jan"]
+- !private ["s16RawRepresentableP", "jul"]
+- !private ["s16RawRepresentableP", "jun"]
+- !private ["s16RawRepresentableP", "mar"]
+- !private ["s16RawRepresentableP", "may"]
+- !private ["s16RawRepresentableP", "monday"]
+- !private ["s16RawRepresentableP", "nov"]
+- !private ["s16RawRepresentableP", "oct"]
+- ["s16RawRepresentableP", "previousMonthOutsideBoundary"]
+- ["s16RawRepresentableP", "previousMonthWithinBoundary"]
+- !private ["s16RawRepresentableP", "saturday"]
+- !private ["s16RawRepresentableP", "sep"]
+- !private ["s16RawRepresentableP", "sunday"]
+- ["s16RawRepresentableP", "thisMonth"]
+- !private ["s16RawRepresentableP", "thursday"]
+- !private ["s16RawRepresentableP", "tuesday"]
+- !private ["s16RawRepresentableP", "wednesday"]
+- ["15JTAppleCalendar16SelectedCellDataV", "CellState"]
+- ["15JTAppleCalendar16SelectedCellDataV", "Date"]
+- ["15JTAppleCalendar16SelectedCellDataV", "DateOwnerCategory"]
+- ["15JTAppleCalendar16SelectedCellDataV", "IndexPath"]
+- ["15JTAppleCalendar16SelectedCellDataV", "cellState"]
+- !private ["15JTAppleCalendar16SelectedCellDataV", "counterIndexPath"]
+- !private ["15JTAppleCalendar16SelectedCellDataV", "date"]
+- ["15JTAppleCalendar16SelectedCellDataV", "dateBelongsTo"]
+- !private ["15JTAppleCalendar16SelectedCellDataV", "indexPath"]
+- !private ["s8SequenceP", "count"]
+- !private ["s8SequenceP", "index"]
+- !private ["s8SequenceP", "key"]
+- !private ["s8SequenceP", "keys"]
+- !private ["s8SequenceP", "min"]
+- !private ["s8SequenceP", "reduce"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["s13SignedIntegerP", "hashValue"]
+- !private ["s13SignedNumericP", "hashValue"]
+- !private ["s10StrideableP", "hashValue"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "index"]
+- !private ["s14_ArrayProtocolP", "reduce"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s23_BidirectionalIndexableP", "count"]
+- !private ["s23_BidirectionalIndexableP", "index"]
+- !private ["s23_BidirectionalIndexableP", "reduce"]
+- !private ["s23_BidirectionalIndexableP", "subscript"]
+- !private ["s18_BitwiseOperationsP", "hashValue"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "index"]
+- !private ["s24_DestructorSafeContainerP", "reduce"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "hashValue"]
+- !private ["s10_IndexableP", "count"]
+- !private ["s10_IndexableP", "index"]
+- !private ["s10_IndexableP", "key"]
+- !private ["s10_IndexableP", "keys"]
+- !private ["s10_IndexableP", "min"]
+- !private ["s10_IndexableP", "reduce"]
+- !private ["s10_IndexableP", "subscript"]
+- !private ["s14_IndexableBaseP", "count"]
+- !private ["s14_IndexableBaseP", "index"]
+- !private ["s14_IndexableBaseP", "key"]
+- !private ["s14_IndexableBaseP", "keys"]
+- !private ["s14_IndexableBaseP", "min"]
+- !private ["s14_IndexableBaseP", "reduce"]
+- !private ["s14_IndexableBaseP", "subscript"]
+- !private ["s17_MutableIndexableP", "count"]
+- !private ["s17_MutableIndexableP", "index"]
+- !private ["s17_MutableIndexableP", "reduce"]
+- !private ["s17_MutableIndexableP", "subscript"]
+- !private ["s22_RandomAccessIndexableP", "count"]
+- !private ["s22_RandomAccessIndexableP", "index"]
+- !private ["s22_RandomAccessIndexableP", "reduce"]
+- !private ["s22_RandomAccessIndexableP", "subscript"]
+- !private ["s26_RangeReplaceableIndexableP", "count"]
+- !private ["s26_RangeReplaceableIndexableP", "index"]
+- !private ["s26_RangeReplaceableIndexableP", "reduce"]
+- !private ["s26_RangeReplaceableIndexableP", "subscript"]
+- !private ["s11_StrideableP", "hashValue"]
+depends-nominal:
+- !private "Sa"
+- !private "s10ArraySliceV"
+- !private "s23BidirectionalCollectionP"
+- !private "s13BinaryIntegerP"
+- !private "Sb"
+- !private "s7CVarArgP"
+- "15JTAppleCalendar0B4DataV"
+- "15JTAppleCalendar9CellStateV"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "15JTAppleCalendar23ConfigurationParametersV"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- "15JTAppleCalendar9DateOwnerO"
+- "15JTAppleCalendar16SelectedCellDataV17DateOwnerCategoryO"
+- "15JTAppleCalendar15DateSegmentInfoV"
+- !private "15JTAppleCalendar10DaysOfWeekO"
+- !private "s9DecodableP"
+- !private "s10DictionaryV"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s17FixedWidthIntegerP"
+- "s8HashableP"
+- !private "15JTAppleCalendar20InDateCellGenerationO"
+- !private "Si"
+- "15JTAppleCalendar0A19DateConfigGeneratorV"
+- !private "s22LazyCollectionProtocolP"
+- !private "s17LazyMapCollectionV"
+- !private "s20LazySequenceProtocolP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "15JTAppleCalendar5MonthV"
+- "15JTAppleCalendar9MonthSizeV"
+- !private "15JTAppleCalendar12MonthsOfYearO"
+- !private "s25MutableBidirectionalSliceV"
+- !private "s17MutableCollectionP"
+- !private "s24MutableRandomAccessSliceV"
+- !private "s12MutableSliceV"
+- !private "s7NumericP"
+- !private "15JTAppleCalendar21OutDateCellGenerationO"
+- !private "s22RandomAccessCollectionP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s21RangeReplaceableSliceV"
+- "s16RawRepresentableP"
+- "15JTAppleCalendar16SelectedCellDataV"
+- !private "s8SequenceP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "s10StrideableP"
+- !private "s14_ArrayProtocolP"
+- !private "s23_BidirectionalIndexableP"
+- !private "s18_BitwiseOperationsP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- !private "s17_MutableIndexableP"
+- !private "s22_RandomAccessIndexableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s11_StrideableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "26cdf10dba4e75040364b83d92c6dfc5"

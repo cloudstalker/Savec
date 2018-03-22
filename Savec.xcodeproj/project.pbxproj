@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52100A442054F5FD00516F01 /* MainTabBarControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52100A432054F5FD00516F01 /* MainTabBarControl.swift */; };
+		52100A46205500F100516F01 /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52100A45205500F100516F01 /* OverviewController.swift */; };
+		52100A482055015900516F01 /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52100A472055015900516F01 /* HistoryController.swift */; };
+		52100A4A2055018B00516F01 /* LeaderboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52100A492055018B00516F01 /* LeaderboardController.swift */; };
+		52100A4C205501F600516F01 /* MoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52100A4B205501F600516F01 /* MoreController.swift */; };
+		52100A4E2055107300516F01 /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52100A4D2055107300516F01 /* TemplateViewController.swift */; };
+		52100A5020551E9100516F01 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52100A4F20551E9100516F01 /* AppHelper.swift */; };
+		529E69F92061181D007245E6 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E69F82061181D007245E6 /* Placeholder.swift */; };
 		52E9138B204E774600A09EAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E9138A204E774600A09EAC /* AppDelegate.swift */; };
-		52E9138D204E774600A09EAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E9138C204E774600A09EAC /* ViewController.swift */; };
-		52E91390204E774600A09EAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E9138E204E774600A09EAC /* Main.storyboard */; };
 		52E91392204E774600A09EAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52E91391204E774600A09EAC /* Assets.xcassets */; };
 		52E91395204E774600A09EAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E91393204E774600A09EAC /* LaunchScreen.storyboard */; };
 		52E913A0204E774600A09EAC /* SavecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E9139F204E774600A09EAC /* SavecTests.swift */; };
@@ -34,10 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52100A432054F5FD00516F01 /* MainTabBarControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarControl.swift; sourceTree = "<group>"; };
+		52100A45205500F100516F01 /* OverviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewController.swift; sourceTree = "<group>"; };
+		52100A472055015900516F01 /* HistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
+		52100A492055018B00516F01 /* LeaderboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardController.swift; sourceTree = "<group>"; };
+		52100A4B205501F600516F01 /* MoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreController.swift; sourceTree = "<group>"; };
+		52100A4D2055107300516F01 /* TemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
+		52100A4F20551E9100516F01 /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
+		529E69F82061181D007245E6 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 		52E91387204E774600A09EAC /* Savec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Savec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52E9138A204E774600A09EAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52E9138C204E774600A09EAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		52E9138F204E774600A09EAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52E91391204E774600A09EAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52E91394204E774600A09EAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52E91396204E774600A09EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,11 +110,17 @@
 			isa = PBXGroup;
 			children = (
 				52E9138A204E774600A09EAC /* AppDelegate.swift */,
-				52E9138C204E774600A09EAC /* ViewController.swift */,
-				52E9138E204E774600A09EAC /* Main.storyboard */,
 				52E91391204E774600A09EAC /* Assets.xcassets */,
 				52E91393204E774600A09EAC /* LaunchScreen.storyboard */,
 				52E91396204E774600A09EAC /* Info.plist */,
+				52100A432054F5FD00516F01 /* MainTabBarControl.swift */,
+				52100A45205500F100516F01 /* OverviewController.swift */,
+				52100A472055015900516F01 /* HistoryController.swift */,
+				52100A492055018B00516F01 /* LeaderboardController.swift */,
+				52100A4B205501F600516F01 /* MoreController.swift */,
+				52100A4D2055107300516F01 /* TemplateViewController.swift */,
+				52100A4F20551E9100516F01 /* AppHelper.swift */,
+				529E69F82061181D007245E6 /* Placeholder.swift */,
 			);
 			path = Savec;
 			sourceTree = "<group>";
@@ -234,7 +252,6 @@
 			files = (
 				52E91395204E774600A09EAC /* LaunchScreen.storyboard in Resources */,
 				52E91392204E774600A09EAC /* Assets.xcassets in Resources */,
-				52E91390204E774600A09EAC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +276,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52E9138D204E774600A09EAC /* ViewController.swift in Sources */,
+				52100A482055015900516F01 /* HistoryController.swift in Sources */,
 				52E9138B204E774600A09EAC /* AppDelegate.swift in Sources */,
+				52100A4E2055107300516F01 /* TemplateViewController.swift in Sources */,
+				52100A4C205501F600516F01 /* MoreController.swift in Sources */,
+				52100A5020551E9100516F01 /* AppHelper.swift in Sources */,
+				52100A442054F5FD00516F01 /* MainTabBarControl.swift in Sources */,
+				52100A4A2055018B00516F01 /* LeaderboardController.swift in Sources */,
+				52100A46205500F100516F01 /* OverviewController.swift in Sources */,
+				529E69F92061181D007245E6 /* Placeholder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +320,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		52E9138E204E774600A09EAC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52E9138F204E774600A09EAC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		52E91393204E774600A09EAC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -427,6 +443,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Savec",
+				);
 				INFOPLIST_FILE = Savec/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NUS.Savec;
@@ -441,6 +461,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Savec",
+				);
 				INFOPLIST_FILE = Savec/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NUS.Savec;

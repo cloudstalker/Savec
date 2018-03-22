@@ -1,0 +1,101 @@
+{
+  "": {
+    "swift-dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/master.swiftdeps"
+  },
+  "/Users/xinpenghu/Desktop/Savec/Sources/CalendarEnums.swift": {
+    "dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/CalendarEnums.d",
+    "object": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/CalendarEnums.swift.o",
+    "swiftmodule": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/CalendarEnums~partial.swiftmodule",
+    "swift-dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/CalendarEnums.swiftdeps"
+  },
+  "/Users/xinpenghu/Desktop/Savec/Sources/CalendarStructs.swift": {
+    "dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/CalendarStructs.d",
+    "object": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/CalendarStructs.swift.o",
+    "swiftmodule": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/CalendarStructs~partial.swiftmodule",
+    "swift-dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/CalendarStructs.swiftdeps"
+  },
+  "/Users/xinpenghu/Desktop/Savec/Sources/GlobalFunctionsAndExtensions.swift": {
+    "dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/GlobalFunctionsAndExtensions.d",
+    "object": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/GlobalFunctionsAndExtensions.swift.o",
+    "swiftmodule": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/GlobalFunctionsAndExtensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/GlobalFunctionsAndExtensions.swiftdeps"
+  },
+  "/Users/xinpenghu/Desktop/Savec/Sources/InternalActionFunctions.swift": {
+    "dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/InternalActionFunctions.d",
+    "object": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/InternalActionFunctions.swift.o",
+    "swiftmodule": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/InternalActionFunctions~partial.swiftmodule",
+    "swift-dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/InternalActionFunctions.swiftdeps"
+  },
+  "/Users/xinpenghu/Desktop/Savec/Sources/InternalQueryFunctions.swift": {
+    "dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/InternalQueryFunctions.d",
+    "object": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/InternalQueryFunctions.swift.o",
+    "swiftmodule": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/InternalQueryFunctions~partial.swiftmodule",
+    "swift-dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/InternalQueryFunctions.swiftdeps"
+  },
+  "/Users/xinpenghu/Desktop/Savec/Sources/JTAppleCalendarDelegateProtocol.swift": {
+    "dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCalendarDelegateProtocol.d",
+    "object": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCalendarDelegateProtocol.swift.o",
+    "swiftmodule": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCalendarDelegateProtocol~partial.swiftmodule",
+    "swift-dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCalendarDelegateProtocol.swiftdeps"
+  },
+  "/Users/xinpenghu/Desktop/Savec/Sources/JTAppleCalendarLayout.swift": {
+    "dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCalendarLayout.d",
+    "object": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCalendarLayout.swift.o",
+    "swiftmodule": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCalendarLayout~partial.swiftmodule",
+    "swift-dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCalendarLayout.swiftdeps"
+  },
+  "/Users/xinpenghu/Desktop/Savec/Sources/JTAppleCalendarLayoutProtocol.swift": {
+    "dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCalendarLayoutProtocol.d",
+    "object": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCalendarLayoutProtocol.swift.o",
+    "swiftmodule": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCalendarLayoutProtocol~partial.swiftmodule",
+    "swift-dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCalendarLayoutProtocol.swiftdeps"
+  },
+  "/Users/xinpenghu/Desktop/Savec/Sources/JTAppleCalendarVariables.swift": {
+    "dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCalendarVariables.d",
+    "object": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCalendarVariables.swift.o",
+    "swiftmodule": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCalendarVariables~partial.swiftmodule",
+    "swift-dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCalendarVariables.swiftdeps"
+  },
+  "/Users/xinpenghu/Desktop/Savec/Sources/JTAppleCalendarView.swift": {
+    "dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCalendarView.d",
+    "object": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCalendarView.swift.o",
+    "swiftmodule": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCalendarView~partial.swiftmodule",
+    "swift-dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCalendarView.swiftdeps"
+  },
+  "/Users/xinpenghu/Desktop/Savec/Sources/JTAppleCell.swift": {
+    "dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCell.d",
+    "object": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCell.swift.o",
+    "swiftmodule": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCell~partial.swiftmodule",
+    "swift-dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCell.swiftdeps"
+  },
+  "/Users/xinpenghu/Desktop/Savec/Sources/JTAppleCollectionReusableView.swift": {
+    "dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCollectionReusableView.d",
+    "object": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCollectionReusableView.swift.o",
+    "swiftmodule": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCollectionReusableView~partial.swiftmodule",
+    "swift-dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTAppleCollectionReusableView.swiftdeps"
+  },
+  "/Users/xinpenghu/Desktop/Savec/Sources/JTCalendarProtocols.swift": {
+    "dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTCalendarProtocols.d",
+    "object": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTCalendarProtocols.swift.o",
+    "swiftmodule": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTCalendarProtocols~partial.swiftmodule",
+    "swift-dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/JTCalendarProtocols.swiftdeps"
+  },
+  "/Users/xinpenghu/Desktop/Savec/Sources/UICollectionViewDelegates.swift": {
+    "dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/UICollectionViewDelegates.d",
+    "object": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/UICollectionViewDelegates.swift.o",
+    "swiftmodule": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/UICollectionViewDelegates~partial.swiftmodule",
+    "swift-dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/UICollectionViewDelegates.swiftdeps"
+  },
+  "/Users/xinpenghu/Desktop/Savec/Sources/UIScrollViewDelegates.swift": {
+    "dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/UIScrollViewDelegates.d",
+    "object": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/UIScrollViewDelegates.swift.o",
+    "swiftmodule": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/UIScrollViewDelegates~partial.swiftmodule",
+    "swift-dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/UIScrollViewDelegates.swiftdeps"
+  },
+  "/Users/xinpenghu/Desktop/Savec/Sources/UserInteractionFunctions.swift": {
+    "dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/UserInteractionFunctions.d",
+    "object": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/UserInteractionFunctions.swift.o",
+    "swiftmodule": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/UserInteractionFunctions~partial.swiftmodule",
+    "swift-dependencies": "/Users/xinpenghu/Desktop/Savec/.build/x86_64-apple-macosx10.10/debug/JTAppleCalendar.build/UserInteractionFunctions.swiftdeps"
+  }
+}
