@@ -26,18 +26,28 @@ class LeaderboardController:TemplateViewController, UITableViewDelegate, UITable
         segRank.insertSegment(withTitle: "Faculties", at: 1, animated: false)
         segRank.tintColor = UIColor.savecGreen
         segRank.backgroundColor = UIColor.white
-        segRank.layer.borderWidth = 1
-        segRank.layer.cornerRadius = 3
-        segRank.layer.borderColor = UIColor.savecGreen.cgColor
-        segRank.selectedSegmentIndex = currentSegment
+        segRank.layer.borderWidth = 2
+        segRank.layer.cornerRadius = 2
+        segRank.layer.borderColor = UIColor.white.cgColor
         segRank.addTarget(self, action: #selector(segValueChanged), for: .valueChanged)
+        segRank.selectedSegmentIndex = currentSegment
         view.addSubview(segRank)
         
-        rankList = UITableView(frame: CGRect(x: 30, y: 160, width: Constants.scrWidth - 60, height: 300))
+        rankList = UITableView(frame: CGRect(x: 30, y: 150, width: Constants.scrWidth - 60, height: 300))
         rankList.delegate = self
         rankList.dataSource = self
         rankList.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         rankList.allowsSelection = false
+        
+        
+        let rankListContainer = UIView(frame: rankList.frame)
+        rankListContainer.backgroundColor = UIColor.white
+        rankListContainer.layer.shadowOffset = CGSize(width: 0, height: 3)
+        rankListContainer.layer.shadowRadius = 2
+        rankListContainer.layer.shadowOpacity = 1
+        rankListContainer.layer.shadowColor = UIColor.gray.cgColor
+        rankListContainer.layer.masksToBounds = false
+        view.addSubview(rankListContainer)
         view.addSubview(rankList)
     }
     

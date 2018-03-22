@@ -31,30 +31,40 @@ class HistoryController:TemplateViewController, UICollectionViewDelegateFlowLayo
         initDateSettings()
         
         monthPanel = UILabel(frame: CGRect(x: 10, y: 160, width: Constants.scrWidth - 20, height: 50))
-        monthPanel.font = UIFont(name: "Arial", size: 20)
+        monthPanel.font = UIFont(name: "Didot-Bold", size: 20)
         monthPanel.backgroundColor = UIColor.savecGreen
-        monthPanel.textColor = UIColor.black
+        monthPanel.textColor = UIColor.white
         monthPanel.textAlignment = NSTextAlignment.center
         monthPanel.text = getMonthName(today.component(.month, from: now)) + " " + String(today.component(.year, from: now))
+        monthPanel.layer.shadowOffset = CGSize(width:0 ,height: 2)
+        monthPanel.layer.shadowColor = UIColor.gray.cgColor
+        monthPanel.layer.shadowRadius = 2
+        monthPanel.layer.shadowOpacity = 1
+        monthPanel.layer.masksToBounds = false
         view.addSubview(monthPanel)
         
         let weekLayout = UICollectionViewFlowLayout()
         weekLayout.sectionInset = UIEdgeInsets(top: 10, left:10, bottom: 10, right:10)
         weekLayout.itemSize = CGSize(width: Constants.weekUnitWidth, height: Constants.weekUnitHeight)
         
-        weekCollection = UICollectionView(frame: CGRect(x: 10, y: 210, width: Constants.scrWidth - 20, height: 50), collectionViewLayout: weekLayout)
+        weekCollection = UICollectionView(frame: CGRect(x: 10, y: 210, width: Constants.scrWidth - 20, height: 40), collectionViewLayout: weekLayout)
         weekCollection.dataSource = self
         weekCollection.delegate = self
         weekCollection.register(WeekCell.self, forCellWithReuseIdentifier: "WeekCell")
-        weekCollection.backgroundColor = UIColor.savecGreen
+        weekCollection.backgroundColor = UIColor.white
         weekCollection.allowsSelection = false
+        weekCollection.layer.masksToBounds = false
+        weekCollection.layer.shadowColor = UIColor.gray.cgColor
+        weekCollection.layer.shadowRadius = 2
+        weekCollection.layer.shadowOffset = CGSize(width: 0, height: 2)
+        weekCollection.layer.shadowOpacity = 1
         view.addSubview(weekCollection)
         
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 10, left:10, bottom: 10, right:10)
         layout.itemSize = CGSize(width: Constants.calendarUnitWidth, height: Constants.calendarUnitHeight)
         
-        datesCollection = UICollectionView(frame: CGRect(x: 10, y: 260, width: Constants.scrWidth - 20, height: Constants.scrHeight - Constants.tabBarHeight - 370), collectionViewLayout: layout)
+        datesCollection = UICollectionView(frame: CGRect(x: 10, y: 250, width: Constants.scrWidth - 20, height: Constants.scrHeight - Constants.tabBarHeight - 370), collectionViewLayout: layout)
         datesCollection.dataSource = self
         datesCollection.delegate = self
         datesCollection.register(CalendarCell.self, forCellWithReuseIdentifier: "DatesCell")
@@ -72,7 +82,7 @@ class HistoryController:TemplateViewController, UICollectionViewDelegateFlowLayo
         datesCollection.addGestureRecognizer(rightSwipe)
         view.addSubview(datesCollection)
         
-        infoPanel = UILabel(frame: CGRect(x: 10, y: Constants.scrHeight - Constants.tabBarHeight - 110, width: Constants.scrWidth - 20, height: 50))
+        infoPanel = UILabel(frame: CGRect(x: 10, y: Constants.scrHeight - Constants.tabBarHeight - 120, width: Constants.scrWidth - 20, height: 50))
         infoPanel.font = UIFont(name: "Arial", size: 15)
         infoPanel.backgroundColor = UIColor.init(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.6)
         infoPanel.textColor = UIColor.black
@@ -167,7 +177,7 @@ class HistoryController:TemplateViewController, UICollectionViewDelegateFlowLayo
         if collectionView == datesCollection{
             infoPanel.text = "You have selected: " + String(indexPath.item - (firstWeekDayOfMonth - 2)) + " " + getMonthName(today.component(.month, from: now))
             let selectedCell = collectionView.cellForItem(at: indexPath)
-            selectedCell?.backgroundColor = UIColor.savecGreen
+            selectedCell?.backgroundColor = UIColor.white
         }
         else{
         }
@@ -213,7 +223,7 @@ class WeekCell: UICollectionViewCell{
         super.init(frame: frame)
         label = UILabel(frame: self.bounds)
         label.font = UIFont(name: "Arial", size: 15)
-        label.textColor = UIColor.white
+        label.textColor = UIColor.black
         label.textAlignment = NSTextAlignment.center
         
         contentView.addSubview(label)
