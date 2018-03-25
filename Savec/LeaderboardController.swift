@@ -21,7 +21,21 @@ class LeaderboardController:TemplateViewController, UITableViewDelegate, UITable
         super.viewDidLoad()
         super.setTitle(title: "Leaderboard")
 
-        let segRank = UISegmentedControl(frame: CGRect(x: 30, y: 120, width: Constants.scrWidth - 60, height: 30))
+        let rankListContainer = UIView()
+        rankListContainer.backgroundColor = UIColor.white
+        rankListContainer.layer.shadowOffset = CGSize(width: 0, height: 3)
+        rankListContainer.layer.shadowRadius = 2
+        rankListContainer.layer.shadowOpacity = 1
+        rankListContainer.layer.shadowColor = UIColor.gray.cgColor
+        rankListContainer.layer.masksToBounds = false
+        view.addSubview(rankListContainer)
+        rankListContainer.translatesAutoresizingMaskIntoConstraints = false
+        rankListContainer.topAnchor.constraint(equalTo: view.subviews[0].bottomAnchor, constant: 20).isActive = true
+        rankListContainer.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor).isActive = true
+        rankListContainer.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor).isActive = true
+        rankListContainer.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: -20).isActive = true
+        
+        let segRank = UISegmentedControl()
         segRank.insertSegment(withTitle: "Users", at: 0, animated: false)
         segRank.insertSegment(withTitle: "Faculties", at: 1, animated: false)
         segRank.tintColor = UIColor.savecGreen
@@ -32,23 +46,24 @@ class LeaderboardController:TemplateViewController, UITableViewDelegate, UITable
         segRank.addTarget(self, action: #selector(segValueChanged), for: .valueChanged)
         segRank.selectedSegmentIndex = currentSegment
         view.addSubview(segRank)
+        segRank.translatesAutoresizingMaskIntoConstraints = false
+        segRank.topAnchor.constraint(equalTo: view.subviews[0].bottomAnchor, constant: 20).isActive = true
+        segRank.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor).isActive = true
+        segRank.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor).isActive = true
+        segRank.heightAnchor.constraint(equalToConstant:  30).isActive = true
         
         rankList = UITableView(frame: CGRect(x: 30, y: 150, width: Constants.scrWidth - 60, height: 300))
         rankList.delegate = self
         rankList.dataSource = self
         rankList.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         rankList.allowsSelection = false
-        
-        
-        let rankListContainer = UIView(frame: rankList.frame)
-        rankListContainer.backgroundColor = UIColor.white
-        rankListContainer.layer.shadowOffset = CGSize(width: 0, height: 3)
-        rankListContainer.layer.shadowRadius = 2
-        rankListContainer.layer.shadowOpacity = 1
-        rankListContainer.layer.shadowColor = UIColor.gray.cgColor
-        rankListContainer.layer.masksToBounds = false
-        view.addSubview(rankListContainer)
+        rankList.separatorStyle = .none
         view.addSubview(rankList)
+        rankList.translatesAutoresizingMaskIntoConstraints = false
+        rankList.topAnchor.constraint(equalTo: segRank.bottomAnchor).isActive = true
+        rankList.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor).isActive = true
+        rankList.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor).isActive = true
+        rankList.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: -20).isActive = true
     }
     
     @objc func segValueChanged() -> Void {

@@ -22,7 +22,7 @@ public class OverviewController:TemplateViewController{
         infoContainer.alignment = .center
         infoContainer.spacing = Constants.stackSpacing
         
-        let containedTop = InfoUnit(Constants.stackSpacing+Constants.infoWidth * 2, Constants.infoTopHeight, Constants.infoBotHeight, which: "top")
+        let containedTop = InfoUnit(Constants.stackSpacing + Constants.infoWidth * 2, Constants.infoTopHeight, Constants.infoBotHeight, which: "top")
         infoContainer.addArrangedSubview(containedTop)
         infoContainer.translatesAutoresizingMaskIntoConstraints = false
         
@@ -40,15 +40,13 @@ public class OverviewController:TemplateViewController{
         view.addSubview(infoContainer)
         infoContainer.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         infoContainer.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        
-        
     }
     
     public override func viewDidLayoutSubviews() {
-        let avatar = UIImageView(frame: CGRect(x: 0,y: 0,width: 50,height: 50))
-        avatar.center = CGPoint(x:infoContainer.frame.maxX, y: infoContainer.frame.minY)
+        let avatar = UIImageView(frame: CGRect(x: 0,y: 0,width: Constants.avatarRadius * 2,height: Constants.avatarRadius * 2))
+        avatar.center = CGPoint(x:infoContainer.frame.maxX - Constants.avatarRadius, y: infoContainer.frame.minY)
         avatar.backgroundColor = UIColor.white
-        avatar.layer.cornerRadius = 25
+        avatar.layer.cornerRadius = Constants.avatarRadius
         avatar.layer.shadowRadius = 2
         avatar.layer.shadowOffset = CGSize(width: 1, height: 1)
         avatar.layer.shadowColor = UIColor.gray.cgColor
@@ -91,14 +89,17 @@ public class OverviewController:TemplateViewController{
         btmRect.widthAnchor.constraint(equalToConstant: width).isActive = true
         let btmLabel = UILabel(frame: btmRect.bounds)
         switch which {
+        // Data to put here for no. of stickers
         case "top":
             btmLabel.text = "7 X"
+        // Data to put here for no. of available rewards
         case "btmLeft":
             btmLabel.text = "1"
+        // Data to put here for current ranking
         case "btmRight":
             btmLabel.text = "No. 15"
         default:
-            btmLabel.text = "Error: option non-exist"
+            btmLabel.text = "Error: option non-existent"
         }
         btmLabel.font = UIFont.init(name: "Arial", size: 30)
         btmLabel.textColor = UIColor.black

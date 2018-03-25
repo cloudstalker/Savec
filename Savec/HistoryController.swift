@@ -22,6 +22,7 @@ class HistoryController:TemplateViewController, UICollectionViewDelegateFlowLayo
     var datesCollection: UICollectionView!
     var weekCollection: UICollectionView!
     let weekdays = ["Sun", "Mon", "Tues", "Wed", "Thu", "Fri", "Sat"]
+    var wrapper: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,63 +31,119 @@ class HistoryController:TemplateViewController, UICollectionViewDelegateFlowLayo
         now = Date()
         initDateSettings()
         
-        monthPanel = UILabel(frame: CGRect(x: 10, y: 160, width: Constants.scrWidth - 20, height: 50))
+        wrapper = UIStackView()
+        view.addSubview(wrapper)
+        wrapper.translatesAutoresizingMaskIntoConstraints = false
+        wrapper.topAnchor.constraint(equalTo: view.subviews[0].bottomAnchor, constant: 20.0).isActive = true
+        wrapper.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        wrapper.spacing = 0
+        wrapper.distribution = .equalSpacing
+        wrapper.axis = .vertical
+        
+        monthPanel = UILabel()
+        monthPanel.translatesAutoresizingMaskIntoConstraints = false
+        monthPanel.widthAnchor.constraint(equalToConstant: CGFloat(Constants.scrWidth - 40)).isActive = true
+        monthPanel.heightAnchor.constraint(equalToConstant: 40.0).isActive = true
         monthPanel.font = UIFont(name: "Didot-Bold", size: 20)
         monthPanel.backgroundColor = UIColor.savecGreen
         monthPanel.textColor = UIColor.white
         monthPanel.textAlignment = NSTextAlignment.center
         monthPanel.text = getMonthName(today.component(.month, from: now)) + " " + String(today.component(.year, from: now))
-        monthPanel.layer.shadowOffset = CGSize(width:0 ,height: 2)
-        monthPanel.layer.shadowColor = UIColor.gray.cgColor
-        monthPanel.layer.shadowRadius = 2
-        monthPanel.layer.shadowOpacity = 1
-        monthPanel.layer.masksToBounds = false
-        view.addSubview(monthPanel)
         
         let weekLayout = UICollectionViewFlowLayout()
         weekLayout.sectionInset = UIEdgeInsets(top: 10, left:10, bottom: 10, right:10)
         weekLayout.itemSize = CGSize(width: Constants.weekUnitWidth, height: Constants.weekUnitHeight)
         
-        weekCollection = UICollectionView(frame: CGRect(x: 10, y: 210, width: Constants.scrWidth - 20, height: 40), collectionViewLayout: weekLayout)
+        weekCollection = UICollectionView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), collectionViewLayout: weekLayout)
+        weekCollection.translatesAutoresizingMaskIntoConstraints = false
+        weekCollection.widthAnchor.constraint(equalToConstant: CGFloat(Constants.scrWidth - 40)).isActive = true
+        weekCollection.heightAnchor.constraint(equalToConstant: 40.0).isActive = true
         weekCollection.dataSource = self
         weekCollection.delegate = self
         weekCollection.register(WeekCell.self, forCellWithReuseIdentifier: "WeekCell")
         weekCollection.backgroundColor = UIColor.white
         weekCollection.allowsSelection = false
         weekCollection.layer.masksToBounds = false
-        weekCollection.layer.shadowColor = UIColor.gray.cgColor
-        weekCollection.layer.shadowRadius = 2
-        weekCollection.layer.shadowOffset = CGSize(width: 0, height: 2)
-        weekCollection.layer.shadowOpacity = 1
-        view.addSubview(weekCollection)
         
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 10, left:10, bottom: 10, right:10)
         layout.itemSize = CGSize(width: Constants.calendarUnitWidth, height: Constants.calendarUnitHeight)
         
-        datesCollection = UICollectionView(frame: CGRect(x: 10, y: 250, width: Constants.scrWidth - 20, height: Constants.scrHeight - Constants.tabBarHeight - 370), collectionViewLayout: layout)
+        datesCollection = UICollectionView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), collectionViewLayout: layout)
+        datesCollection.translatesAutoresizingMaskIntoConstraints = false
+        datesCollection.widthAnchor.constraint(equalToConstant: CGFloat(Constants.scrWidth - 40)).isActive = true
+        datesCollection.heightAnchor.constraint(equalToConstant: CGFloat(Constants.scrHeight / 2)).isActive = true
         datesCollection.dataSource = self
         datesCollection.delegate = self
         datesCollection.register(CalendarCell.self, forCellWithReuseIdentifier: "DatesCell")
         datesCollection.backgroundColor = UIColor.white
-        datesCollection.layer.shadowOffset = CGSize(width:0 ,height: 2)
-        datesCollection.layer.shadowColor = UIColor.gray.cgColor
-        datesCollection.layer.shadowRadius = 2
-        datesCollection.layer.shadowOpacity = 1
-        datesCollection.layer.masksToBounds = false
+        datesCollection.isScrollEnabled = false
+//        datesCollection.layer.masksToBounds = false
+//        datesCollection.layer.shadowRadius = 2
+//        datesCollection.layer.shadowOffset = CGSize(width: 0, height: 2)
+//        datesCollection.layer.shadowColor = UIColor.gray.cgColor
+//        datesCollection.layer.shadowOpacity = 1.0
         let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeLeft))
         leftSwipe.direction = .left
         datesCollection.addGestureRecognizer(leftSwipe)
         let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeRight))
         rightSwipe.direction = .right
         datesCollection.addGestureRecognizer(rightSwipe)
-        view.addSubview(datesCollection)
         
-        infoPanel = UILabel(frame: CGRect(x: 10, y: Constants.scrHeight - Constants.tabBarHeight - 120, width: Constants.scrWidth - 20, height: 50))
+        infoPanel = UILabel()
+        infoPanel.translatesAutoresizingMaskIntoConstraints = false
+        infoPanel.widthAnchor.constraint(equalToConstant: CGFloat(Constants.scrWidth - 40)).isActive = true
+        infoPanel.heightAnchor.constraint(equalToConstant: 30).isActive = true
         infoPanel.font = UIFont(name: "Arial", size: 15)
         infoPanel.backgroundColor = UIColor.init(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.6)
         infoPanel.textColor = UIColor.black
-        view.addSubview(infoPanel)
+        
+        wrapper.addArrangedSubview(monthPanel)
+        wrapper.addArrangedSubview(weekCollection)
+        wrapper.addArrangedSubview(datesCollection)
+        wrapper.addArrangedSubview(infoPanel)
+        
+//        let shadowCaster = UIView(frame: CGRect(x:20, y: 150, width: 200, height: 200))
+//        shadowCaster.layer.masksToBounds = false
+//        shadowCaster.layer.shadowColor = UIColor.gray.cgColor
+//        shadowCaster.layer.shadowOffset = CGSize(width: 0, height: 2)
+//        shadowCaster.layer.shadowRadius = 2
+//        shadowCaster.layer.shadowOpacity = 1.0
+//        shadowCaster.backgroundColor = UIColor.white
+//        view.addSubview(shadowCaster)
+//        view.bringSubview(toFront: shadowCaster)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        let backgroundOfWrapper = UIView(frame: wrapper.frame)
+        backgroundOfWrapper.backgroundColor = UIColor.white
+        backgroundOfWrapper.layer.masksToBounds = false
+        backgroundOfWrapper.layer.shadowColor = UIColor.gray.cgColor
+        backgroundOfWrapper.layer.shadowOffset = CGSize(width: 0, height: 2)
+        backgroundOfWrapper.layer.shadowRadius = 1
+        backgroundOfWrapper.layer.shadowOpacity = 1.0
+        view.addSubview(backgroundOfWrapper)
+        view.sendSubview(toBack: backgroundOfWrapper)
+
+        let leftMask = UIView()
+        view.addSubview(leftMask)
+        leftMask.translatesAutoresizingMaskIntoConstraints = false
+        leftMask.topAnchor.constraint(equalTo: wrapper.topAnchor).isActive = true
+        leftMask.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        leftMask.trailingAnchor.constraint(equalTo: wrapper.leadingAnchor).isActive = true
+        leftMask.bottomAnchor.constraint(equalTo: wrapper.bottomAnchor).isActive = true
+        leftMask.backgroundColor = UIColor.savecSoil
+
+        let rightMask = UIView()
+        view.addSubview(rightMask)
+        rightMask.translatesAutoresizingMaskIntoConstraints = false
+        rightMask.topAnchor.constraint(equalTo: wrapper.topAnchor, constant: -10).isActive = true
+        rightMask.leadingAnchor.constraint(equalTo: wrapper.trailingAnchor).isActive = true
+        rightMask.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        rightMask.bottomAnchor.constraint(equalTo: wrapper.bottomAnchor, constant: 10).isActive = true
+        rightMask.backgroundColor = UIColor.savecSoil
+
     }
     
     func initDateSettings(){
@@ -97,7 +154,28 @@ class HistoryController:TemplateViewController, UICollectionViewDelegateFlowLayo
         firstWeekDayOfMonth = today.component(.weekday, from: daysOfMonth.start)
     }
     
+    func animationSwipe(option: String){
+        switch option {
+        case "Left":
+            let transition = CATransition()
+            transition.type = kCATransitionPush
+            transition.subtype = kCATransitionFromRight
+            transition.duration = 0.2
+            transition.fillMode = kCAFillModeRemoved
+            datesCollection.layer.add(transition, forKey: "transition")
+        case "Right":
+            let transition = CATransition()
+            transition.type = kCATransitionPush
+            transition.subtype = kCATransitionFromLeft
+            transition.duration = 0.2
+            transition.fillMode = kCAFillModeRemoved
+            datesCollection.layer.add(transition, forKey: "transition")
+        default:
+            break
+        }
+    }
     @objc func swipeLeft(){
+        animationSwipe(option: "Left")
         now = Calendar.current.date(byAdding: .month, value: 1, to: now)
         monthPanel.text = getMonthName(today.component(.month, from: now)) + " " + String(today.component(.year, from: now))
         initDateSettings()
@@ -105,6 +183,7 @@ class HistoryController:TemplateViewController, UICollectionViewDelegateFlowLayo
     }
     
     @objc func swipeRight(){
+        animationSwipe(option: "Right")
         now = Calendar.current.date(byAdding: .month, value: -1, to: now)
         monthPanel.text = getMonthName(today.component(.month, from: now)) + " " + String(today.component(.year, from: now))
         initDateSettings()
@@ -157,7 +236,7 @@ class HistoryController:TemplateViewController, UICollectionViewDelegateFlowLayo
             let currentDay = indexPath.item - (firstWeekDayOfMonth - 2)
             if (indexPath.item >= (firstWeekDayOfMonth - 1) && currentDay <= lastDayOfMonth){
                 cell.date.text = String(currentDay)
-                cell.notifier.backgroundColor = UIColor.gray
+                cell.notifier.backgroundColor = UIColor.savecGreen
             }
             else{
                 cell.date.text = " "
@@ -222,7 +301,7 @@ class WeekCell: UICollectionViewCell{
     override init(frame: CGRect){
         super.init(frame: frame)
         label = UILabel(frame: self.bounds)
-        label.font = UIFont(name: "Arial", size: 15)
+        label.font = UIFont(name: "Arial", size: 12)
         label.textColor = UIColor.black
         label.textAlignment = NSTextAlignment.center
         

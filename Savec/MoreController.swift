@@ -15,7 +15,7 @@ class MoreController:TemplateViewController, UITableViewDelegate, UITableViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let optionsTable = UITableView(frame: CGRect(x: 20, y: 120, width: UIScreen.main.bounds.width - 2 * 20, height: self.view.frame.height), style: .grouped)
+        let optionsTable = UITableView(frame: CGRect.null, style: .grouped)
         optionsTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         optionsTable.delegate = self
         optionsTable.dataSource = self
@@ -24,7 +24,13 @@ class MoreController:TemplateViewController, UITableViewDelegate, UITableViewDat
         optionsTable.allowsSelection = true
         optionsTable.allowsMultipleSelection = false
         optionsTable.isScrollEnabled = false
+        optionsTable.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.6)
         view.addSubview(optionsTable)
+        optionsTable.translatesAutoresizingMaskIntoConstraints = false
+        optionsTable.topAnchor.constraint(equalTo: view.subviews[0].bottomAnchor, constant: 20).isActive = true
+        optionsTable.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor).isActive = true
+        optionsTable.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor).isActive = true
+        optionsTable.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: -20).isActive = true
         super.setTitle(title: "More")
     }
     
