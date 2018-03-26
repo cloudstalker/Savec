@@ -23,6 +23,7 @@ class Placeholder: TemplateViewController {
     @objc private func getBack() -> Void{
         let moreController = MainTabBarControl()
         moreController.selectedIndex = 3
-        self.present(moreController, animated: false, completion: nil)
+        moreController.modalTransitionStyle = .crossDissolve
+        self.present(moreController, animated: true, completion: nil)
     }
 }

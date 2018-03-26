@@ -160,14 +160,14 @@ class HistoryController:TemplateViewController, UICollectionViewDelegateFlowLayo
             let transition = CATransition()
             transition.type = kCATransitionPush
             transition.subtype = kCATransitionFromRight
-            transition.duration = 0.2
+            transition.duration = 0.5
             transition.fillMode = kCAFillModeRemoved
             datesCollection.layer.add(transition, forKey: "transition")
         case "Right":
             let transition = CATransition()
             transition.type = kCATransitionPush
             transition.subtype = kCATransitionFromLeft
-            transition.duration = 0.2
+            transition.duration = 0.5
             transition.fillMode = kCAFillModeRemoved
             datesCollection.layer.add(transition, forKey: "transition")
         default:

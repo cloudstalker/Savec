@@ -36,9 +36,9 @@ class MoreController:TemplateViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let temp = Placeholder()
-  //      temp.modalPresentationStyle = .custom
-  //      temp.modalTransitionStyle = .coverVertical
-        self.present(temp, animated: false, completion: nil)
+
+        temp.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        present(temp, animated: true, completion: nil)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
