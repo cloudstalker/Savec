@@ -11,7 +11,7 @@
 import UIKit
 
 class HistoryController:TemplateViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{
-   
+
     var monthPanel: UILabel!
     var infoPanel: UILabel!
     var now: Date!
@@ -34,21 +34,21 @@ class HistoryController:TemplateViewController, UICollectionViewDelegateFlowLayo
         wrapper = UIStackView()
         view.addSubview(wrapper)
         wrapper.translatesAutoresizingMaskIntoConstraints = false
-        wrapper.topAnchor.constraint(equalTo: view.subviews[0].bottomAnchor, constant: 20.0).isActive = true
+        wrapper.topAnchor.constraint(equalTo: view.subviews[0].bottomAnchor, constant: 50.0).isActive = true
         wrapper.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         wrapper.spacing = 0
         wrapper.distribution = .equalSpacing
         wrapper.axis = .vertical
         
         monthPanel = UILabel()
-        monthPanel.translatesAutoresizingMaskIntoConstraints = false
         monthPanel.widthAnchor.constraint(equalToConstant: CGFloat(Constants.scrWidth - 40)).isActive = true
         monthPanel.heightAnchor.constraint(equalToConstant: 40.0).isActive = true
         monthPanel.font = UIFont(name: "Didot-Bold", size: 20)
-        monthPanel.backgroundColor = UIColor.savecGreen
         monthPanel.textColor = UIColor.white
         monthPanel.textAlignment = NSTextAlignment.center
         monthPanel.text = getMonthName(today.component(.month, from: now)) + " " + String(today.component(.year, from: now))
+        monthPanel.layer.cornerRadius = CGFloat(Constants.roundRadius)
+        monthPanel.layer.backgroundColor = UIColor.savecGreen.cgColor
         
         let weekLayout = UICollectionViewFlowLayout()
         weekLayout.sectionInset = UIEdgeInsets(top: 10, left:10, bottom: 10, right:10)
@@ -116,16 +116,21 @@ class HistoryController:TemplateViewController, UICollectionViewDelegateFlowLayo
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        let backgroundOfWrapper = UIView(frame: wrapper.frame)
+        let backgroundOfWrapper = UIView()
+        backgroundOfWrapper.topAnchor.constraint(equalTo: monthPanel.bottomAnchor, constant: 5)
+        backgroundOfWrapper.bottomAnchor.constraint(equalTo: wrapper.bottomAnchor)
+        backgroundOfWrapper.leftAnchor.constraint(equalTo: wrapper.leftAnchor)
+        backgroundOfWrapper.rightAnchor.constraint(equalTo: wrapper.rightAnchor)
         backgroundOfWrapper.backgroundColor = UIColor.white
+        backgroundOfWrapper.layer.cornerRadius = CGFloat(Constants.roundRadius)
         backgroundOfWrapper.layer.masksToBounds = false
-        backgroundOfWrapper.layer.shadowColor = UIColor.gray.cgColor
-        backgroundOfWrapper.layer.shadowOffset = CGSize(width: 0, height: 2)
-        backgroundOfWrapper.layer.shadowRadius = 1
-        backgroundOfWrapper.layer.shadowOpacity = 1.0
+//        backgroundOfWrapper.layer.shadowColor = UIColor.gray.cgColor
+//        backgroundOfWrapper.layer.shadowOffset = CGSize(width: 0, height: 2)
+//        backgroundOfWrapper.layer.shadowRadius = 1
+//        backgroundOfWrapper.layer.shadowOpacity = 1.0
         view.addSubview(backgroundOfWrapper)
         view.sendSubview(toBack: backgroundOfWrapper)
-
+        
         let leftMask = UIView()
         view.addSubview(leftMask)
         leftMask.translatesAutoresizingMaskIntoConstraints = false

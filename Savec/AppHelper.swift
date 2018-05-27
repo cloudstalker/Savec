@@ -28,6 +28,8 @@ struct Constants{
     static let weekUnitWidth:CGFloat = Constants.calendarUnitWidth
     static let weekUnitHeight:CGFloat = 20.0
     
+    static let roundRadius = 5.0
+    
 }
 
 // Custom color for this app
@@ -36,4 +38,5 @@ extension UIColor{
     static let savecGreen = UIColor(red: 99.0/255, green: 165.0/255, blue: 91.0/255, alpha: 1.0)
     static let savecSoil = UIColor(red: 235.0/255, green: 215.0/255, blue: 186.0/255, alpha: 1.0)
     static let savecSoilDark = UIColor(red: 232.0/255, green: 204.0/255, blue: 162.0/255, alpha: 1.0)
+    static let savecSoilTrans = UIColor(red: 235.0/255, green: 215.0/255, blue: 186.0/255, alpha: 0.8)
 }

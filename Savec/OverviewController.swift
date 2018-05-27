@@ -59,12 +59,13 @@ public class OverviewController:TemplateViewController{
         let subContainer = UIStackView()
         subContainer.axis = .vertical
         subContainer.distribution = UIStackViewDistribution.equalSpacing
-        subContainer.spacing = 0
+        subContainer.spacing = 3
         
         let topRect = UIView()
         topRect.backgroundColor = UIColor.white
         topRect.heightAnchor.constraint(equalToConstant: heightOfT).isActive = true
         topRect.widthAnchor.constraint(equalToConstant: width).isActive = true
+        topRect.layer.cornerRadius = CGFloat(Constants.roundRadius)
         let topLabel = UILabel(frame: topRect.bounds)
         switch which {
         case "top":
@@ -83,8 +84,9 @@ public class OverviewController:TemplateViewController{
         topRect.addSubview(topLabel)
         
         let btmRect = UIView()
-        btmRect.backgroundColor = UIColor.lightGray
+        btmRect.backgroundColor = UIColor.white
         btmRect.alpha = 0.5
+        btmRect.layer.cornerRadius = CGFloat(Constants.roundRadius)
         btmRect.heightAnchor.constraint(equalToConstant: heightOfB).isActive = true
         btmRect.widthAnchor.constraint(equalToConstant: width).isActive = true
         let btmLabel = UILabel(frame: btmRect.bounds)
@@ -110,14 +112,14 @@ public class OverviewController:TemplateViewController{
         subContainer.addArrangedSubview(topRect)
         subContainer.addArrangedSubview(btmRect)
         
-        let msgBoxBg = UIView(frame: subContainer.bounds)
-        msgBoxBg.backgroundColor = UIColor.white
-        msgBoxBg.layer.shadowColor = UIColor.gray.cgColor
-        msgBoxBg.layer.shadowOffset = CGSize(width: 0, height: 1)
-        msgBoxBg.layer.shadowOpacity = 0.8
-        msgBoxBg.layer.shadowRadius = 2
-        msgBoxBg.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        subContainer.insertSubview(msgBoxBg, at: 0)
+//        let msgBoxBg = UIView(frame: subContainer.bounds)
+//        msgBoxBg.backgroundColor = UIColor.white
+//        msgBoxBg.layer.shadowColor = UIColor.gray.cgColor
+//        msgBoxBg.layer.shadowOffset = CGSize(width: 0, height: 1)
+//        msgBoxBg.layer.shadowOpacity = 0.8
+//        msgBoxBg.layer.shadowRadius = 2
+//        msgBoxBg.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+//        subContainer.insertSubview(msgBoxBg, at: 0)
         return subContainer
         }
 }

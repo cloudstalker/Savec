@@ -14,6 +14,10 @@ public class TemplateViewController:UIViewController{
         super.viewDidLoad()
         let topBg = UIView(frame: CGRect(x: 0, y: 0, width: Constants.scrWidth, height: Constants.maskHeight))
         topBg.backgroundColor = UIColor.savecGreen
+        topBg.layer.shadowOpacity = 1.0
+        topBg.layer.shadowRadius = 2
+        topBg.layer.shadowColor = UIColor.gray.cgColor
+        topBg.layer.shadowOffset = CGSize(width: 0, height: 2)
         view.backgroundColor = UIColor.savecSoil
         view.addSubview(topBg)
         

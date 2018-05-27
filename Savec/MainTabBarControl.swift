@@ -26,7 +26,9 @@ public class MainTabBarControl:UITabBarController{
         
         tabBar.tintColor = UIColor.savecGreen
         tabBar.barTintColor = UIColor.white
-        tabBar.layer.borderWidth = 1
-        tabBar.layer.borderColor = UIColor.lightGray.cgColor
+        tabBar.layer.shadowColor = UIColor.gray.cgColor
+        tabBar.layer.shadowRadius = 2
+        tabBar.layer.shadowOpacity = 1.0
+        tabBar.layer.shadowOffset = CGSize(width: 0, height: -1)
     }
 }
